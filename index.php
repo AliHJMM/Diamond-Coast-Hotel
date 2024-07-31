@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Sign Up - LuxuryHotel</title>
+  <title>Sign-Up Diamond Coast Hotel</title>
   <link rel="stylesheet" href="css/vendor/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.png">
@@ -26,12 +26,8 @@
           <div class="col-md-6">
             <form action="register-handler.php" method="POST">
               <div class="form-group">
-                <label for="first_name">First Name</label>
-                <input type="text" class="form-control" id="first_name" name="first_name" required>
-              </div>
-              <div class="form-group">
-                <label for="last_name">Last Name</label>
-                <input type="text" class="form-control" id="last_name" name="last_name" required>
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
               </div>
               <div class="form-group">
                 <label for="email">Email Address</label>
@@ -45,6 +41,10 @@
                 <label for="confirm_password">Confirm Password</label>
                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
               </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="show_passwords" onclick="togglePasswords()">
+                <label class="form-check-label" for="show_passwords">Show Passwords</label>
+              </div>
               <button type="submit" class="btn btn-primary">Sign Up</button>
               <p class="mt-3">Already have an account? <a href="sign-in.php">Sign In</a></p>
             </form>
@@ -54,10 +54,24 @@
     </div>
   </div>
 
-
 </div>
 
 <script src="js/vendor/jquery-3.4.1.min.js"></script>
 <script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script>
+  function togglePasswords() {
+    var passwordField = document.getElementById('password');
+    var confirmPasswordField = document.getElementById('confirm_password');
+    var showPasswordsCheckbox = document.getElementById('show_passwords');
+    
+    if (showPasswordsCheckbox.checked) {
+      passwordField.type = 'text';
+      confirmPasswordField.type = 'text';
+    } else {
+      passwordField.type = 'password';
+      confirmPasswordField.type = 'password';
+    }
+  }
+</script>
 </body>
 </html>

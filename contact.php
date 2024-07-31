@@ -22,7 +22,7 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>LuxuryHotel Free HTML Template by Untree.co</title>
+    <title>Diamond Coast Hotel</title>
   </head>
   <body>
     

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Sign In - LuxuryHotel</title>
+  <title>Sign-In Diamond Coast Hotel</title>
   <link rel="stylesheet" href="css/vendor/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.png">
@@ -26,12 +26,16 @@
           <div class="col-md-6">
             <form action="login-handler.php" method="POST">
               <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="show_password" onclick="togglePassword()">
+                <label class="form-check-label" for="show_password">Show Password</label>
               </div>
               <button type="submit" class="btn btn-primary">Sign In</button>
               <p class="mt-3">Don't have an account? <a href="index.php">Sign Up</a></p>
@@ -42,10 +46,21 @@
     </div>
   </div>
 
-
 </div>
 
 <script src="js/vendor/jquery-3.4.1.min.js"></script>
 <script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script>
+  function togglePassword() {
+    var passwordField = document.getElementById('password');
+    var showPasswordCheckbox = document.getElementById('show_password');
+    
+    if (showPasswordCheckbox.checked) {
+      passwordField.type = 'text';
+    } else {
+      passwordField.type = 'password';
+    }
+  }
+</script>
 </body>
 </html>
