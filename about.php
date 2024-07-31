@@ -53,11 +53,11 @@
       <nav class="untree_co--site-nav dark js-sticky-nav">
         <div class="container d-flex align-items-center">
           <div class="logo-wrap">
-            <a href="index.php" class="untree_co--site-logo">LuxuryHotel</a>
+            <a href="home.php" class="untree_co--site-logo">LuxuryHotel</a>
           </div>
           <div class="site-nav-ul-wrap text-center d-none d-lg-block">
             <ul class="site-nav-ul js-clone-nav">
-              <li><a href="index.php">Home</a></li>
+              <li><a href="home.php">Home</a></li>
               <li class="has-children">
                 <a href="rooms.php">Rooms</a>
                 <ul class="dropdown">
@@ -260,7 +260,7 @@
             <div class="col-md-6 text-md-left">
               <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
               <p>
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="index.php">Untree.co</a>. All Rights Reserved. Design by <a href="https://untree.co/" target="_blank" class="text-primary">Untree.co</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="home.php">Untree.co</a>. All Rights Reserved. Design by <a href="https://untree.co/" target="_blank" class="text-primary">Untree.co</a>
               </p>
             <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
             </div>

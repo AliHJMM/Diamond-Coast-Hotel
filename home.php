@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
 
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  
+
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/vendor/icomoon/style.css">
@@ -24,14 +25,14 @@
     <title>LuxuryHotel Free HTML Template by Untree.co</title>
   </head>
   <body>
-    
+
     <div id="untree_co--overlayer"></div>
     <div class="loader">
       <div class="spinner-border text-primary" role="status">
         <span class="sr-only">Loading...</span>
       </div>
     </div>
-    
+
     <nav class="untree_co--site-mobile-menu">
       <div class="close-wrap d-flex">
         <a href="#" class="d-flex ml-auto js-menu-toggle">
@@ -55,7 +56,7 @@
           </div>
           <div class="site-nav-ul-wrap text-center d-none d-lg-block">
             <ul class="site-nav-ul js-clone-nav">
-              <li><a href="home.php">Home</a></li>
+              <li class="active"><a href="home.php">Home</a></li>
               <li class="has-children">
                 <a href="rooms.php">Rooms</a>
                 <ul class="dropdown">
@@ -81,7 +82,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="active"><a href="amenities.php">Amenities</a></li>
+              <li><a href="amenities.php">Amenities</a></li>
               <li><a href="gallery.php">Gallery</a></li>
               <li><a href="about.php">About Us</a></li>
               <li><a href="contact.php">Contact</a></li>
@@ -112,30 +113,124 @@
         </div>
       </nav>
 
-      <main class="site-untree_co--main">
+      <div class="untree_co--site-main">
         
 
-        <div class="untree_co--site-hero inner-page" style="background-image: url('images/slider_2.jpg')">
-          <div class="container">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-md-7 text-center">
-                <div class="site-hero-contents" data-aos="fade-up">
-                  <h1 class="hero-heading text-white">Amenities</h1>
+        <div class="owl-carousel owl-hero">
+
+          <div class="untree_co--site-hero overlay" style="background-image: url('images/slider_2.jpg')">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-8">
+                  <div class="site-hero-contents text-center" data-aos="fade-up">
+                    <h1 class="hero-heading">LuxuryHotel by Untree.co</h1>
+                    <div class="sub-text">
+                      <p>Another free awesome templates for Hotels and any kind of website by <a href="https://untree.co/" target="_blank" class="text-white font-weight-bold">Untree.co</a>. See our <a href="https://untree.co/license/" class="text-white font-weight-bold">license page</a> for more usage details</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="untree_co--site-hero overlay"  style="background-image: url('images/slider_1.jpg')">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-7">
+                  <div class="site-hero-contents text-center" data-aos="fade-up">
+                    <h1 class="hero-heading">Enjoy Your Stay</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="untree_co--site-hero overlay" style="background-image: url('images/room_1_a.jpg')">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-10">
+                  <div class="site-hero-contents text-center" data-aos="fade-up">
+                    <h1 class="hero-heading">Away from the Hustle and Bustle of City Life</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        
+
+        <div class="untree_co--site-section float-left pb-0 featured-rooms">
+
+          <div class="container pt-0 pb-5">
+            <div class="row justify-content-center text-center">  
+              <div class="col-lg-6 section-heading" data-aos="fade-up">
+                <h3 class="text-center">Featured Rooms</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid pt-5">
+            <div class="suite-wrap overlap-image-1">
+
+              <div class="suite">
+                <div class="image-stack">
+                  <div class="image-stack-item image-stack-item-top" data-jarallax-element="-50">
+                    <div class="overlay"></div>
+                    <img src="images/room_1_a.jpg" alt="Image" class="img-fluid pic1">
+                  </div>
+                  <div class="image-stack-item image-stack-item-bottom">
+                    <div class="overlay"></div>
+                    <img src="images/room_1_b.jpg" alt="Image" class="img-fluid pic2">
+                  </div>
+                </div>
+              </div> <!-- .suite -->
+
+              <div class="suite-contents" data-jarallax-element="50">
+                <h2 class="suite-title">King Bedroom</h2>
+                <div class="suite-excerpt">
+                  <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
+                  <p><a href="#" class="readmore">Room Details</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="suite-wrap overlap-image-2">
+
+              <div class="suite">
+                <div class="image-stack">
+                  <div class="image-stack-item image-stack-item-top">
+                    <div class="overlay"></div>
+                    <img src="images/room_2_a.jpg" alt="Image" class="img-fluid pic1">
+                  </div>
+                  <div class="image-stack-item image-stack-item-bottom" data-jarallax-element="-50">
+                    <div class="overlay"></div>
+                    <img src="images/room_2_b.jpg" alt="Image" class="img-fluid pic2">
+                  </div>
+                </div>
+              </div>
+
+              <div class="suite-contents" data-jarallax-element="50">
+                <h2 class="suite-title">Queen &amp; Double Bedroom</h2>
+                <div class="suite-excerpt pr-5">
+                  <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger</p>
+                  <p><a href="#" class="readmore">Room Details</a></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
         <div class="untree_co--site-section">
           <div class="container">
-            
-            <div class="row justify-content-center text-center pt-0 pb-5">  
+            <div class="container pt-0 pb-5">
+            <div class="row justify-content-center text-center">  
               <div class="col-lg-6 section-heading" data-aos="fade-up">
                 <h3 class="text-center">Hotel Amenities</h3>
               </div>
             </div>
-          
+          </div>
             <div class="row custom-row-02192 align-items-stretch">
               <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
                 <div class="media-29191 text-center h-100">
@@ -205,9 +300,47 @@
             </div>
           </div>
         </div>
+        
 
         
         
+
+        <div class="untree_co--site-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 section-heading" data-aos="fade-up">
+                <h3 class="text-left">News &amp; Events</h3>
+                <div class="w-75">
+                  <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
+                  </div>
+                <p><a href="#" class="readmore">All Posts</a></p>
+              </div>
+              <div class="col-md-4">
+                <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                  <a href="#" class="thumb"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                  <div class="post-entry-contents">
+                    <h3><a href="#">How algorithms shape our world</a></h3>
+                    <div class="date">December 20, 2019 &bullet; by <a href="#">Joefrey Mahusay</a></div>
+                    <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
+                    <p><a href="#" class="readmore">Read more</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="post-entry" data-aos="fade-up" data-aos-delay="200">
+                  <a href="#" class="thumb"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+                  <div class="post-entry-contents">
+                    <h3><a href="#">How algorithms shape our world</a></h3>
+                    <div class="date">December 20, 2019 &bullet; by <a href="#">Joefrey Mahusay</a></div>
+                    <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
+                    <p><a href="#" class="readmore">Read more</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
     
         <div class="untree_co--site-section py-5 bg-body-darker cta">
@@ -221,7 +354,7 @@
         </div>
 
 
-      </main>
+      </div>
       <footer class="untree_co--site-footer">
 
         <div class="container">
@@ -302,6 +435,7 @@
         
       </footer>
     </div>
+
     <!-- Search -->
     <div class="search-wrap">
       <a href="#" class="close-search js-search-toggle">
@@ -326,7 +460,7 @@
     
     <script src="js/vendor/jarallax.min.js"></script>
     <script src="js/vendor/jarallax-element.min.js"></script>
-    <script src="js/vendor/ofi.min.js"></script>
+    <script sr c="js/vendor/ofi.min.js"></script>
 
     <script src="js/vendor/aos.js"></script>
 
