@@ -59,13 +59,13 @@
       <nav class="untree_co--site-nav dark js-sticky-nav">
         <div class="container d-flex align-items-center">
           <div class="logo-wrap">
-            <a href="index.html" class="untree_co--site-logo">LuxuryHotel</a>
+            <a href="index.php" class="untree_co--site-logo">LuxuryHotel</a>
           </div>
           <div class="site-nav-ul-wrap text-center d-none d-lg-block">
             <ul class="site-nav-ul js-clone-nav">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li class="has-children">
-                <a href="rooms.html">Rooms</a>
+                <a href="rooms.php">Rooms</a>
                 <ul class="dropdown">
                   <li class="has-children">
                     <a href="#">King Bedroom</a>
@@ -89,10 +89,10 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="amenities.html">Amenities</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li class="active"><a href="contact.html">Contact</a></li>
+              <li><a href="amenities.php">Amenities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="about.php">About Us</a></li>
+              <li class="active"><a href="contact.php">Contact</a></li>
             </ul>
           </div>
           <div class="icons-wrap text-md-right">
@@ -271,7 +271,7 @@
             <div class="col-md-6 text-md-left">
               <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
               <p>
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="index.html">Untree.co</a>. All Rights Reserved. Design by <a href="https://untree.co/" target="_blank" class="text-primary">Untree.co</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="index.php">Untree.co</a>. All Rights Reserved. Design by <a href="https://untree.co/" target="_blank" class="text-primary">Untree.co</a>
               </p>
             <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
             </div>

@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/vendor/aos.css">
     <link rel="stylesheet" href="css/vendor/animate.min.css">
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -38,7 +37,6 @@
         <span class="sr-only">Loading...</span>
       </div>
     </div>
-
     
     <nav class="untree_co--site-mobile-menu">
       <div class="close-wrap d-flex">
@@ -59,13 +57,13 @@
       <nav class="untree_co--site-nav js-sticky-nav">
         <div class="container d-flex align-items-center">
           <div class="logo-wrap">
-            <a href="index.html" class="untree_co--site-logo">LuxuryHotel</a>
+            <a href="index.php" class="untree_co--site-logo">LuxuryHotel</a>
           </div>
           <div class="site-nav-ul-wrap text-center d-none d-lg-block">
             <ul class="site-nav-ul js-clone-nav">
-              <li><a href="index.html">Home</a></li>
-              <li class="has-children">
-                <a href="rooms.html">Rooms</a>
+              <li><a href="index.php">Home</a></li>
+              <li class="has-children active">
+                <a href="rooms.php">Rooms</a>
                 <ul class="dropdown">
                   <li class="has-children">
                     <a href="#">King Bedroom</a>
@@ -89,10 +87,10 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="amenities.html">Amenities</a></li>
-              <li class="active"><a href="gallery.html">Gallery</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="amenities.php">Amenities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="about.php">About Us</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
           </div>
           <div class="icons-wrap text-md-right">
@@ -122,105 +120,175 @@
 
       <main class="untree_co--site-main">
         
-
         <div class="untree_co--site-hero inner-page" style="background-image: url('images/slider_2.jpg')">
           <div class="container">
             <div class="row align-items-center justify-content-center">
               <div class="col-md-7 text-center">
                 <div class="site-hero-contents" data-aos="fade-up">
-                  <h1 class="hero-heading text-white">Gallery</h1>
+                  <h1 class="hero-heading text-white">Our Rooms</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <div class="untree_co--site-section">
+        <div class="untree_co--site-section pb-0">
+          <div class="container-fluid px-md-0">
 
-          <div class="container-fluid px-0">
-
-            <div class="row justify-content-center text-center pt-0 pb-5">  
-              <div class="col-lg-6 section-heading" data-aos="fade-up">
-                <h3 class="text-center">Slider Gallery</h3>
+            <div class="row justify-content-center text-center site-section pt-0">
+              <div class="col-md-6">
+                <h2 class="display-4" data-aos="fade-up">Enjoy Your Stay</h2>
+                <p data-aos="fade-up" data-aos-delay="100">A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress </p>
               </div>
             </div>
-
-            <div class="row align-items-stretch">
-              <div class="col-9 relative" data-aos="fade-up" data-aos-delay="">
-                <div class="owl-carousel owl-gallery-big">
-                  <div class="slide-thumb bg-image" style="background-image: url('images/room_1_a.jpg')"></div>
-                  <div class="slide-thumb bg-image" style="background-image: url('images/room_1_b.jpg')"></div>
-                  <div class="slide-thumb bg-image" style="background-image: url('images/room_2_a.jpg')"></div>
-                  <div class="slide-thumb bg-image" style="background-image: url('images/room_2_b.jpg')"></div>
+            <div class="row no-gutters align-items-stretch room-animate site-section">
+              <div class="col-md-7 img-wrap" data-jarallax-element="-100">
+                
+                <div class="bg-image h-100" style="background-color: #efefef; background-image: url('images/room_1_a.jpg');">
+                
                 </div>
-
-                <div class="slider-counter text-center"></div>
-
               </div>
-              <div class="col-3 relative"  data-aos="fade-up" data-aos-delay="100">
+              <div class="col-md-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-8 py-5">
+                    <h3 class="display-4 heading">King Bedroom</h3>
+                    <div class="room-exerpt">
+                      <div class="room-price mb-4">$200<span class="per">/night</span></div>
+                      <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress </p>
+                      <p>Small, lower-priced hotels may offer only the most basic guest services and facilities. </p>
 
-                <div class="owl-carousel owl-gallery-small">
-                  <div class="slide-thumb bg-image" style="background-image: url('images/room_1_a.jpg')"><a href="#"></a></div>
-                  <div class="slide-thumb bg-image" style="background-image: url('images/room_1_b.jpg')"><a href="#"></a></div>
-                  <div class="slide-thumb bg-image" style="background-image: url('images/room_2_a.jpg')"><a href="#"></a></div>
-                  <div class="slide-thumb bg-image" style="background-image: url('images/room_2_b.jpg')"><a href="#"></a></div>
+                      <div class="row mt-5">
+                        <div class="col-12">
+                          <h3 class="mb-4">Amenities</h3>
+                          <ul class="list-unstyled ul-check">
+                            <li>32-inch LCD TV with cable channels and DVD player</li>
+                            <li>Handheld and mounted rain shower heads</li>
+                            <li>Wi-Fi access</li>
+                            <li>Safety deposit box</li>
+                            <li>Mini-bar</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
 
               </div>
             </div>
           </div>
 
-        </div>
 
-        <div class="untree_co--site-section">
-          <div class="container">
-            <div class="row justify-content-center text-center pt-0 pb-5">  
-              <div class="col-lg-6 section-heading" data-aos="fade-up">
-                <h3 class="text-center">More Galleries</h3>
+          <div class="container-fluid px-md-0">
+            <div class="row no-gutters align-items-stretch room-animate site-section">
+              <div class="col-md-7 order-md-2 img-wrap" data-jarallax-element="-100">
+                
+                <div class="bg-image h-100" style="background-color: #efefef; background-image: url('images/slider_2.jpg');"></div>
+                
+              </div>
+              <div class="col-md-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-8 py-5">
+                    <h3 class="display-4 heading">Queen &amp; Double Bedroom</h3>
+                    <div class="room-exerpt">
+                      <div class="room-price mb-4">$200<span class="per">/night</span></div>
+                      <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress </p>
+
+                      <p>Small, lower-priced hotels may offer only the most basic guest services and facilities. </p>
+
+                      <div class="row mt-5">
+                        <div class="col-12">
+                          <h3 class="mb-4">Amenities</h3>
+                          <ul class="list-unstyled ul-check">
+                            <li>32-inch LCD TV with cable channels and DVD player</li>
+                            <li>Handheld and mounted rain shower heads</li>
+                            <li>Wi-Fi access</li>
+                            <li>Safety deposit box</li>
+                            <li>Mini-bar</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="row gutter-2">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="">
-                <a href="images/img_1.jpg" data-fancybox="gallery">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                </a>
+          </div>
+
+          <div class="container-fluid px-md-0">
+
+            <div class="row no-gutters align-items-stretch room-animate site-section">
+              <div class="col-md-7 img-wrap" data-jarallax-element="-100">
+                
+                <div class="bg-image h-100" style="background-color: #efefef; background-image: url('images/room_1_a.jpg');"></div>
+                
               </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <a href="images/img_2.jpg" data-fancybox="gallery">
-                  <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-                </a>
+              <div class="col-md-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-8 py-5">
+                    <h3 class="display-4 heading">King Bedroom</h3>
+                    <div class="room-exerpt">
+                      <div class="room-price mb-4">$200<span class="per">/night</span></div>
+                      <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress </p>
+                      <p>Small, lower-priced hotels may offer only the most basic guest services and facilities. </p>
+
+                      <div class="row mt-5">
+                        <div class="col-12">
+                          <h3 class="mb-4">Amenities</h3>
+                          <ul class="list-unstyled ul-check">
+                            <li>32-inch LCD TV with cable channels and DVD player</li>
+                            <li>Handheld and mounted rain shower heads</li>
+                            <li>Wi-Fi access</li>
+                            <li>Safety deposit box</li>
+                            <li>Mini-bar</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                <a href="images/img_1.jpg" data-fancybox="gallery">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                </a>
+            </div>
+          </div>
+
+
+          <div class="container-fluid px-md-0">
+            <div class="row no-gutters align-items-stretch room-animate site-section pb-0">
+              <div class="col-md-7 order-md-2 img-wrap" data-jarallax-element="-100">
+                <div class="bg-image h-100" style="background-color: #efefef; background-image: url('images/slider_2.jpg');"></div>
               </div>
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                <a href="images/img_1.jpg" data-fancybox="gallery">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                </a>
-              </div>
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <a href="images/img_1.jpg" data-fancybox="gallery">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                </a>
-              </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="">
-                <a href="images/img_1.jpg" data-fancybox="gallery">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                </a>
-              </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <a href="images/img_2.jpg" data-fancybox="gallery">
-                  <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-                </a>
+              <div class="col-md-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-8 py-5">
+                    <h3 class="display-4 heading">Queen &amp; Double Bedroom</h3>
+                    <div class="room-exerpt">
+                      <div class="room-price mb-4">$200<span class="per">/night</span></div>
+                      <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress </p>
+
+                      <p>Small, lower-priced hotels may offer only the most basic guest services and facilities. </p>
+
+                      <div class="row mt-5">
+                        <div class="col-12">
+                          <h3 class="mb-4">Amenities</h3>
+                          <ul class="list-unstyled ul-check">
+                            <li>32-inch LCD TV with cable channels and DVD player</li>
+                            <li>Handheld and mounted rain shower heads</li>
+                            <li>Wi-Fi access</li>
+                            <li>Safety deposit box</li>
+                            <li>Mini-bar</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-
-        
-        
 
     
         <div class="untree_co--site-section py-5 bg-body-darker cta">
@@ -232,6 +300,7 @@
             </div>
           </div>
         </div>
+
 
       </main>
       <footer class="untree_co--site-footer">
@@ -288,7 +357,7 @@
             <div class="col-md-6 text-md-left">
               <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
               <p>
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="index.html">Untree.co</a>. All Rights Reserved. Design by <a href="https://untree.co/" target="_blank" class="text-primary">Untree.co</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="index.php">Untree.co</a>. All Rights Reserved. Design by <a href="https://untree.co/" target="_blank" class="text-primary">Untree.co</a>
               </p>
             <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
             </div>
@@ -344,8 +413,6 @@
 
     <script src="js/vendor/jquery.lettering.js"></script>
     <script src="js/vendor/jquery.sticky.js"></script>
-
-    <script src="js/vendor/jquery.fancybox.min.js"></script>
 
     <script src="js/vendor/TweenMax.min.js"></script>
     <script src="js/vendor/ScrollMagic.min.js"></script>
