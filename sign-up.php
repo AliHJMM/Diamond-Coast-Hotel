@@ -6,6 +6,7 @@
   <title>Sign Up - LuxuryHotel</title>
   <link rel="stylesheet" href="css/vendor/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
 
