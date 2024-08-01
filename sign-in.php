@@ -1,3 +1,50 @@
+<?php
+session_start();
+require_once 'config.php';
+
+// Database connection
+$link = mysqli_connect("localhost", DBUSER, DBPASS, DBNAME);
+
+function validateUser($username, $password){
+    global $link;
+    $sql = "SELECT salt, password_hash, email FROM users WHERE username='$username';";
+    $result = mysqli_query($link, $sql);
+    
+    if($row = mysqli_fetch_assoc($result)){
+        $salt = $row['salt'];
+        $hashedPassword = md5($password . $salt);
+        
+        // Check if the provided password matches the stored password hash
+        if ($hashedPassword === $row['password_hash']) {
+            $_SESSION['username'] = $username;
+            $_SESSION['email'] = $row['email'];
+            header("Location: home.php");
+            exit();
+        }
+    }
+    return false;
+}
+
+// Handle the POST request from the sign-in form
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["username"]) && isset($_POST["password"])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        
+        if (!validateUser($username, $password)) {
+            $_SESSION['error'] = "Invalid username or password!";
+            header("Location: sign-in.php");
+            exit();
+        }
+    }
+}
+
+// Retrieve error from the session
+$error = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+
+// Clear session error
+unset($_SESSION['error']);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,11 +69,14 @@
           <div class="col-lg-6 section-heading">
             <h2 class="text-center">Sign In</h2>
             <p>Welcome back! Please enter your details to sign in.</p>
+            <?php if($error): ?>
+              <div class="alert alert-danger"><?php echo $error; ?></div>
+            <?php endif; ?>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form action="login-handler.php" method="POST">
+            <form action="sign-in.php" method="POST">
               <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" id="username" name="username" required>
