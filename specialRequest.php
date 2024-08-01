@@ -2,7 +2,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12 text-center">
-                <h3 class="m-0 p-0">If you have any special requests, please feel free to call us. <a href="tel://+123456789012">+12.345.678.9012</a></h3>
+                <h3 class="m-0 p-0">If you have any special requests, please feel free to call us. <a href="tel:+97335114629">+973 35114629</a></h3>
               </div>
             </div>
           </div>
