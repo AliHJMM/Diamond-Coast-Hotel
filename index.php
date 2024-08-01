@@ -8,10 +8,53 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.png">
 </head>
+
+
+<?php
+// Include the necessary functions for salting and hashing
+function generateRandomSalt() {
+    return bin2hex(random_bytes(12)); // Generate a 24-character hexadecimal salt
+}
+
+function insertUser($username, $password) {
+    $link = mysqli_connect("localhost", "my_user", "my_password", "Login");
+    if (!$link) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    
+    $salt = generateRandomSalt();
+    $hashedPassword = md5($password . $salt);
+    $sql = "INSERT INTO Users (Username, Password, Salt) VALUES ('$username', '$hashedPassword', '$salt')";
+    
+    if (mysqli_query($link, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($link);
+    }
+    mysqli_close($link);
+}
+
+// Handle the POST request from the sign-up form
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $confirm_password = $_POST['confirm_password'];
+    
+    // Check if passwords match
+    if ($password !== $confirm_password) {
+        header("Location: index.php?error=Passwords do not match!");
+        exit();
+    } else {
+        insertUser($username, $password);
+    }
+}
+?>
+
+
+
 <body>
 
 <div class="untree_co--site-wrap">
-
 
   <div class="untree_co--site-main">
     <div class="untree_co--site-section">
@@ -24,7 +67,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form action="register-handler.php" method="POST">
+            <form action="index.php" method="POST">
               <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" id="username" name="username" required>
@@ -41,6 +84,11 @@
                 <label for="confirm_password">Confirm Password</label>
                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
               </div>
+              <?php
+                if (isset($_GET['error'])) {
+                    echo '<div class="text-danger" role="alert">' . htmlspecialchars($_GET['error']) . '</div>';
+                }
+              ?>
               <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="show_passwords" onclick="togglePasswords()">
                 <label class="form-check-label" for="show_passwords">Show Passwords</label>
