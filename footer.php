@@ -5,7 +5,6 @@
             <div class="col-md-4 pr-md-5">
               <h3>About Us</h3>
               <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
-              <p><a href="#" class="readmore">Read more</a></p>
             </div>
             <div class="col-md-8 ml-auto">
               <div class="row">
@@ -24,13 +23,17 @@
                   <div class="row mb-3">
                     <div class="col-md-6">
                       <h3>Address</h3>
-                      <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+                      <address>123 Beachfront Avenue, Aberdeen, <br> Freetown, Sierra Leone</address>
                     </div>
                     <div class="col-md-6">
                       <h3>Telephone</h3>
                       <p>
-                        <a href="#">+1 234 5678 910</a> <br>
-                        <a href="#">+2 234 5678 910</a>
+                        <a href="#">+973 3390 7130</a> <br>
+                        <a href="#">+973 3511 4629</a> <br>
+                        <a href="#">+973 3739 9714</a> <br>
+                        <a href="#">+973 3638 2127</a> <br>
+                        <a href="#">+973 3215 5844</a> <br>
+                        <a href="#">+973 3978 0645</a> <br>
                       </p>
                     </div>
                   </div>
@@ -50,11 +53,9 @@
           </div>
           <div class="row mt-5 pt-5 align-items-center">
             <div class="col-md-6 text-md-left">
-              <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
               <p>
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="home.php">Untree.co</a>. All Rights Reserved. Design by <a href="https://untree.co/" target="_blank" class="text-primary">Untree.co</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="home.php">Diamond Coast Hotel</a>. All Rights Reserved. Design by <a href="#" target="_blank" class="text-primary">Diamond Coast Hotel</a>
               </p>
-            <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
             </div>
             <div class="col-md-6 text-md-right">
               <ul class="icons-top icons-dark">
