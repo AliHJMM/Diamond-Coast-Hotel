@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
   <link rel="shortcut icon" href="favicon.png">
 
   <meta name="description" content="" />
@@ -122,7 +121,7 @@
             <div class="row align-items-center">
               <div class="col-md-9">
                 <div class="site-hero-contents" data-aos="fade-up">
-                  <h1 class="hero-heading">About Luxury Hotel</h1>
+                  <h1 class="hero-heading">About Diamond Coast Hotel</h1>
                   <div class="sub-text w-75">
                     <p>Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
                   </div>
@@ -178,7 +177,7 @@
               <div class="col-md-9">
                 <div class="row mb-5 align-items-center">
                   <div class="col-md-5 mr-auto">
-                    <h2 class="display-4">Watch LuxuryHotel Video</h2>
+                    <h2 class="display-4">Watch Diamond Coast Video</h2>
                   </div>
                   <div class="col-md-7 ml-auto">
                      <p>Higher-quality beds, a dresser, a refrigerator and other kitchen facilities, upholstered chairs, a flat screen television, and en-suite bathrooms. Small, lower-priced hotels may offer only the most basic guest services and facilities. </p>

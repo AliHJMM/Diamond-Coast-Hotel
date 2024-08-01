@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
   <link rel="shortcut icon" href="favicon.png">
 
   <meta name="description" content="" />
@@ -166,7 +165,7 @@
                 <div class="col-md-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
                   <div class="media-29190">
                     <span class="label">Email</span>
-                    <p><a href="#">info@Untree.co</a></p>
+                    <p><a href="#">info@DiamondCoast.com</a></p>
                   </div>
                   <div class="media-29190">
                     <span class="label">Phone</span>
