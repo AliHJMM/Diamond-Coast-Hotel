@@ -81,19 +81,19 @@
           <div class="icons-wrap text-md-right">
 
           <ul class="icons-top d-none d-lg-block">
-              <li class="mr-4">
-                <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-moon"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
-              </li>
-            </ul>
+        <li class="mr-4">
+            <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
+        </li>
+        <li>
+            <a href="#" id="darkModeToggle"><i class="fa-solid fa-moon" id="icon"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </li>
+    </ul>
 
             <!-- Mobile Toggle -->
             <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
@@ -221,5 +221,6 @@
 
 
     <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>
