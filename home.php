@@ -23,6 +23,7 @@ if (!isset($_SESSION['username'])) {
   <meta name="keywords" content="" />
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="css/vendor/icomoon/style.css">
     <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
@@ -99,13 +100,13 @@ if (!isset($_SESSION['username'])) {
                 <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
               </li>
               <li>
-                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><i class="fa-solid fa-moon"></i></a>
               </li>
               <li>
-                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
               </li>
               <li>
-                <a href="#"><span class="icon-instagram"></span></a>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
               </li>
             </ul>
 

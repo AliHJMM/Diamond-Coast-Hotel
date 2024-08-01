@@ -2013,3 +2013,36 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.icons-top {
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  align-items: center; /* Centers the icons vertically */
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.icons-top li {
+  margin: 0 10px; /* Optional: Adds spacing between icons */
+}
+
+.icons-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Set width for consistency, adjust as needed */
+  height: 40px; /* Set height for consistency, adjust as needed */
+  border-radius: 50%; /* Makes the background a circle */
+  background-color: #fff; /* Background color, adjust as needed */
+  color: inherit; /* Inherit text color */
+  text-decoration: none; /* Removes underline from links */
+  position: relative; /* Ensures child elements are positioned relative to this container */
+}
+
+.icons-top i, .icons-top span {
+  position: absolute; /* Positions the icons absolutely within the anchor */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the icon */
+}
