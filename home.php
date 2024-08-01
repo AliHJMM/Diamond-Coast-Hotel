@@ -38,12 +38,6 @@ if (!isset($_SESSION['username'])) {
     <title>Diamond Coast Hotel</title>
   </head>
   <body>
-  <div id="welcome-popup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <p>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p>
-  </div>
-</div>
 
 
 

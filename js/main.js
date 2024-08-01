@@ -466,15 +466,3 @@ $(function() {
 
 });
 
-function showPopup() {
-	document.getElementById("welcome-popup").style.display = "block";
-  }
-  
-  function closePopup() {
-	document.getElementById("welcome-popup").style.display = "none";
-  }
-  
-  // Show the popup after a short delay
-  window.onload = function() {
-	setTimeout(showPopup, 1000); // Adjust the delay as needed
-  }
