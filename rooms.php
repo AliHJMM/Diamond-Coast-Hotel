@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (!isset($_SESSION['username'])) {
+  header("Location: sign-in.php");
+    exit();
+}
+
 require_once 'config.php';
 $conn = getDBConnection();
 $sql = "SELECT * FROM rooms";
