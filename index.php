@@ -9,7 +9,6 @@
   <link rel="shortcut icon" href="favicon.png">
 </head>
 
-
 <?php
 require_once 'config.php';
 
@@ -60,6 +59,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['email'] = $email;
             header("Location: index.php");
             exit();
+        } elseif (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$/', $password)) {
+            $_SESSION['error'] = "Password must be 8-16 characters long and include at least one lowercase letter, one uppercase letter, and one special character.";
+            $_SESSION['username'] = $username;
+            $_SESSION['email'] = $email;
+            header("Location: index.php");
+            exit();
         } else {
             insertUser($username, $password, $email);
         }
@@ -76,7 +81,6 @@ unset($_SESSION['error']);
 unset($_SESSION['username']);
 unset($_SESSION['email']);
 ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -159,4 +163,3 @@ unset($_SESSION['email']);
 </script>
 </body>
 </html>
-
