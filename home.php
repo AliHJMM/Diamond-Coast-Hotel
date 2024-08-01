@@ -17,7 +17,6 @@ echo "Welcome, " . $_SESSION['username'];
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
   <link rel="shortcut icon" href="favicon.png">
 
   <meta name="description" content="" />
@@ -135,9 +134,9 @@ echo "Welcome, " . $_SESSION['username'];
               <div class="row align-items-center justify-content-center">
                 <div class="col-md-8">
                   <div class="site-hero-contents text-center" data-aos="fade-up">
-                    <h1 class="hero-heading">LuxuryHotel by Untree.co</h1>
+                    <h1 class="hero-heading">Diamond Coast Hotel</h1>
                     <div class="sub-text">
-                      <p>Another free awesome templates for Hotels and any kind of website by <a href="https://untree.co/" target="_blank" class="text-white font-weight-bold">Untree.co</a>. See our <a href="https://untree.co/license/" class="text-white font-weight-bold">license page</a> for more usage details</p>
+                      <p>Another free awesome templates for Hotels and any kind of website by <a href="#" target="_blank" class="text-white font-weight-bold">Diamond Coast Hotel</a>. See our <a href="#" class="text-white font-weight-bold">license page</a> for more usage details</p>
                     </div>
                   </div>
                 </div>
