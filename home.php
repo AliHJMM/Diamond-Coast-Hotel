@@ -1,12 +1,14 @@
 <?php
-  session_start();
-  if (!isset($_SESSION['username'])) {
-    //header("Location: index.php");
-    echo "not logged in";
-    exit();
-  }
+session_start(); // Start the session
 
+if (!isset($_SESSION['username'])) {
+    echo "Not logged in";
+    exit();
+}
+
+echo "Welcome, " . $_SESSION['username'];
 ?>
+
 
 
 <!doctype html>

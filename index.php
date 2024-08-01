@@ -22,18 +22,19 @@ function generateRandomSalt() {
 }
 
 function insertUser($username, $password , $email) {
-    $link = mysqli_connect("localhost",DBUSER, DBPASS, DBNAME);
+    $link = mysqli_connect("localhost", DBUSER, DBPASS, DBNAME);
     if (!$link) {
         die("Connection failed: " . mysqli_connect_error());
     }
     $salt = generateRandomSalt();
     $hashedPassword = md5($password . $salt);
-    $sql = "INSERT INTO users (username, password_hash, salt,email) VALUES ('$username', '$hashedPassword', '$salt', '$email')";
+    $sql = "INSERT INTO users (username, password_hash, salt, email) VALUES ('$username', '$hashedPassword', '$salt', '$email')";
     
     if (mysqli_query($link, $sql)) {
-      $_SESSION['username'] = $username;
-      $_SESSION['email'] = $email;
-        header  ("Location: home.php");
+        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
+        header("Location: home.php");
+        exit(); // Always exit after redirecting
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($link);
     }
@@ -42,24 +43,27 @@ function insertUser($username, $password , $email) {
 
 // Handle the POST request from the sign-up form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if ((isset($_POST["username"]) &&  $_POST["username"]!="" ) && (isset($_POST["email"]) && $_POST["email"]!="") && (isset($_POST["password"]) && $_POST["password"]!="") && (isset($_POST["confirm_password"]) && $_POST["confirm_password"]!="")) {
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
-    
-    // Check if passwords match
-    if ($password !== $confirm_password) {
-        $_SESSION['error'] = "Passwords do not match!";
-        $_SESSION['username'] = $username;
-        $_SESSION['email'] = $email;
-        header("Location: index.php");
-        exit();
-    } else {
-        insertUser($username, $password,$email);
-    }
+    if ((isset($_POST["username"]) && $_POST["username"] != "") &&
+        (isset($_POST["email"]) && $_POST["email"] != "") &&
+        (isset($_POST["password"]) && $_POST["password"] != "") &&
+        (isset($_POST["confirm_password"]) && $_POST["confirm_password"] != "")) {
 
-  }
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $confirm_password = $_POST['confirm_password'];
+        
+        // Check if passwords match
+        if ($password !== $confirm_password) {
+            $_SESSION['error'] = "Passwords do not match!";
+            $_SESSION['username'] = $username;
+            $_SESSION['email'] = $email;
+            header("Location: index.php");
+            exit();
+        } else {
+            insertUser($username, $password, $email);
+        }
+    }
 }
 
 // Retrieve error and input data from the session
@@ -72,6 +76,7 @@ unset($_SESSION['error']);
 unset($_SESSION['username']);
 unset($_SESSION['email']);
 ?>
+
 
 <!doctype html>
 <html lang="en">
