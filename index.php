@@ -11,6 +11,8 @@
 
 
 <?php
+require_once 'config.php';
+
 // Start the session
 session_start();
 
@@ -19,18 +21,19 @@ function generateRandomSalt() {
     return bin2hex(random_bytes(12)); // Generate a 24-character hexadecimal salt
 }
 
-function insertUser($username, $password) {
-    $link = mysqli_connect("localhost", "my_user", "my_password", "Login");
+function insertUser($username, $password , $email) {
+    $link = mysqli_connect("localhost",DBUSER, DBPASS, DBNAME);
     if (!$link) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    
     $salt = generateRandomSalt();
     $hashedPassword = md5($password . $salt);
-    $sql = "INSERT INTO Users (Username, Password, Salt) VALUES ('$username', '$hashedPassword', '$salt')";
+    $sql = "INSERT INTO users (username, password_hash, salt,email) VALUES ('$username', '$hashedPassword', '$salt', '$email')";
     
     if (mysqli_query($link, $sql)) {
-        echo "New record created successfully";
+      $_SESSION['username'] = $username;
+      $_SESSION['email'] = $email;
+        header  ("Location: home.php");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($link);
     }
@@ -39,6 +42,7 @@ function insertUser($username, $password) {
 
 // Handle the POST request from the sign-up form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if ((isset($_POST["username"]) &&  $_POST["username"]!="" ) && (isset($_POST["email"]) && $_POST["email"]!="") && (isset($_POST["password"]) && $_POST["password"]!="") && (isset($_POST["confirm_password"]) && $_POST["confirm_password"]!="")) {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -52,8 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: index.php");
         exit();
     } else {
-        insertUser($username, $password);
+        insertUser($username, $password,$email);
     }
+
+  }
 }
 
 // Retrieve error and input data from the session

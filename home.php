@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  if (!isset($_SESSION['username'])) {
+    //header("Location: index.php");
+    echo "not logged in";
+    exit();
+  }
+
+?>
+
 
 <!doctype html>
 <html lang="en">
