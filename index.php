@@ -11,6 +11,9 @@
 
 
 <?php
+// Start the session
+session_start();
+
 // Include the necessary functions for salting and hashing
 function generateRandomSalt() {
     return bin2hex(random_bytes(12)); // Generate a 24-character hexadecimal salt
@@ -37,30 +40,49 @@ function insertUser($username, $password) {
 // Handle the POST request from the sign-up form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
     
     // Check if passwords match
     if ($password !== $confirm_password) {
-        header("Location: index.php?error=Passwords do not match!");
+        $_SESSION['error'] = "Passwords do not match!";
+        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
+        header("Location: index.php");
         exit();
     } else {
         insertUser($username, $password);
     }
 }
+
+// Retrieve error and input data from the session
+$error = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
+$email = isset($_SESSION['email']) ? $_SESSION['email'] : '';
+
+// Clear session data
+unset($_SESSION['error']);
+unset($_SESSION['username']);
+unset($_SESSION['email']);
 ?>
 
-
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sign-Up Diamond Coast Hotel</title>
+  <link rel="stylesheet" href="css/vendor/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png">
+</head>
 <body>
 
 <div class="untree_co--site-wrap">
-<div class="logo-wrap" style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 900; color: #ffffff; padding: 10px 0; background-color: #000; text-align: center; text-transform: uppercase; letter-spacing: 4px;">
-  Diamond Coast Hotel
-</div>
-
-
-
+  <div class="logo-wrap" style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 900; color: #ffffff; padding: 10px 0; background-color: #000; text-align: center; text-transform: uppercase; letter-spacing: 4px;">
+    Diamond Coast Hotel
+  </div>
 
   <div class="untree_co--site-main">
     <div class="untree_co--site-section">
@@ -76,11 +98,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form action="index.php" method="POST">
               <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+                <input type="text" class="form-control" id="username" name="username" value="<?php echo htmlspecialchars($username); ?>" required>
               </div>
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" required>
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
@@ -90,11 +112,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="confirm_password">Confirm Password</label>
                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
               </div>
-              <?php
-                if (isset($_GET['error'])) {
-                    echo '<div class="text-danger" role="alert">' . htmlspecialchars($_GET['error']) . '</div>';
-                }
-              ?>
+              <?php if ($error): ?>
+                <div class="text-danger" role="alert"><?php echo htmlspecialchars($error); ?></div>
+              <?php endif; ?>
               <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="show_passwords" onclick="togglePasswords()">
                 <label class="form-check-label" for="show_passwords">Show Passwords</label>
@@ -107,7 +127,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
     </div>
   </div>
-
 </div>
 
 <script src="js/vendor/jquery-3.4.1.min.js"></script>
@@ -129,3 +148,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </script>
 </body>
 </html>
+
