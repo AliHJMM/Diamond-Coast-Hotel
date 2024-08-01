@@ -53,39 +53,28 @@
             <a href="home.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
           </div>
           <div class="site-nav-ul-wrap text-center d-none d-lg-block">
-            <ul class="site-nav-ul js-clone-nav">
-              <li><a href="home.php">Home</a></li>
-              <li class="has-children active">
-                <a href="rooms.php">Rooms</a>
-                <ul class="dropdown">
-                  <li class="has-children">
-                    <a href="#">King Bedroom</a>
-                    <ul class="dropdown">
-                      <li>
-                        <a href="#">King Bedroom</a>
-                      </li>
-                      <li>
-                        <a href="#">Queen &amp; Double Bedroom</a>
-                      </li>
-                      <li>
-                        <a href="#">Le Voila Suite</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Queen &amp; Double Bedroom</a>
-                  </li>
-                  <li>
-                    <a href="#">Le Voila Suite</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="amenities.php">Amenities</a></li>
-              <li><a href="gallery.php">Gallery</a></li>
-              <li><a href="about.php">About Us</a></li>
-              <li><a href="contact.php">Contact</a></li>
-            </ul>
-          </div>
+          <ul class="site-nav-ul js-clone-nav">
+            <li><a href="index.php">Home</a></li>
+            <li class="has-children">
+              <a href="rooms.php">Rooms</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="#">King Bedroom</a>
+                </li>
+                <li>
+                  <a href="#">Queen &amp; Double Bedroom</a>
+                </li>
+                <li>
+                  <a href="#">Le Voila Suite</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="amenities.php">Amenities</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li class="active"><a href="about.php">About Us</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </div>
           <div class="icons-wrap text-md-right">
 
             <ul class="icons-top d-none d-lg-block">
