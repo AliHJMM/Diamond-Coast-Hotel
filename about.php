@@ -53,11 +53,11 @@
     <nav class="untree_co--site-nav dark js-sticky-nav">
       <div class="container d-flex align-items-center">
         <div class="logo-wrap">
-          <a href="index.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
+          <a href="home.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
         </div>
         <div class="site-nav-ul-wrap text-center d-none d-lg-block">
           <ul class="site-nav-ul js-clone-nav">
-            <li><a href="index.php">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li class="has-children">
               <a href="rooms.php">Rooms</a>
               <ul class="dropdown">

@@ -71,7 +71,7 @@ if (!isset($_SESSION['username'])) {
           </div>
           <div class="site-nav-ul-wrap text-center d-none d-lg-block">
           <ul class="site-nav-ul js-clone-nav">
-            <li><a href="index.php">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li class="has-children">
               <a href="rooms.php">Rooms</a>
               <ul class="dropdown">

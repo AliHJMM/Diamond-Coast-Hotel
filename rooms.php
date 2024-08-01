@@ -75,19 +75,8 @@ $conn->close();
             <li class="has-children active">
               <a href="rooms.php">Rooms</a>
               <ul class="dropdown">
-                <li class="has-children">
+                <li>
                   <a href="#">King Bedroom</a>
-                  <ul class="dropdown">
-                    <li>
-                      <a href="#">King Bedroom</a>
-                    </li>
-                    <li>
-                      <a href="#">Queen &amp; Double Bedroom</a>
-                    </li>
-                    <li>
-                      <a href="#">Le Voila Suite</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a href="#">Queen &amp; Double Bedroom</a>
@@ -97,7 +86,7 @@ $conn->close();
                 </li>
               </ul>
             </li>
-            <li><a href="amenities.php">Amenities</a></li>
+            <li><a href="myBooking.php">My Booking</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="about.php">About Us</a></li>
             <li><a href="contact.php">Contact</a></li>
