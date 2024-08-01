@@ -17,7 +17,7 @@ if (!isset($_SESSION['username'])) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="DiamondCoastHotelLogo.png">
 
   <meta name="description" content="" />
   <meta name="keywords" content="" />
@@ -70,39 +70,28 @@ if (!isset($_SESSION['username'])) {
             <a href="home.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
           </div>
           <div class="site-nav-ul-wrap text-center d-none d-lg-block">
-            <ul class="site-nav-ul js-clone-nav">
-              <li class="active"><a href="home.php">Home</a></li>
-              <li class="has-children">
-                <a href="rooms.php">Rooms</a>
-                <ul class="dropdown">
-                  <li class="has-children">
-                    <a href="#">King Bedroom</a>
-                    <ul class="dropdown">
-                      <li>
-                        <a href="#">King Bedroom</a>
-                      </li>
-                      <li>
-                        <a href="#">Queen &amp; Double Bedroom</a>
-                      </li>
-                      <li>
-                        <a href="#">Le Voila Suite</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Queen &amp; Double Bedroom</a>
-                  </li>
-                  <li>
-                    <a href="#">Le Voila Suite</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="amenities.php">Amenities</a></li>
-              <li><a href="gallery.php">Gallery</a></li>
-              <li><a href="about.php">About Us</a></li>
-              <li><a href="contact.php">Contact</a></li>
-            </ul>
-          </div>
+          <ul class="site-nav-ul js-clone-nav">
+            <li><a href="index.php">Home</a></li>
+            <li class="has-children">
+              <a href="rooms.php">Rooms</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="#">King Bedroom</a>
+                </li>
+                <li>
+                  <a href="#">Queen &amp; Double Bedroom</a>
+                </li>
+                <li>
+                  <a href="#">Le Voila Suite</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="myBooking.php">My Booking</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li class="active"><a href="about.php">About Us</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </div>
           <div class="icons-wrap text-md-right">
 
             <ul class="icons-top d-none d-lg-block">
@@ -139,9 +128,6 @@ if (!isset($_SESSION['username'])) {
                 <div class="col-md-8">
                   <div class="site-hero-contents text-center" data-aos="fade-up">
                     <h1 class="hero-heading">Diamond Coast Hotel</h1>
-                    <div class="sub-text">
-                      <p>Another free awesome templates for Hotels and any kind of website by <a href="#" target="_blank" class="text-white font-weight-bold">Diamond Coast Hotel</a>. See our <a href="#" class="text-white font-weight-bold">license page</a> for more usage details</p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -204,7 +190,7 @@ if (!isset($_SESSION['username'])) {
                 <h2 class="suite-title">King Bedroom</h2>
                 <div class="suite-excerpt">
                   <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
-                  <p><a href="#" class="readmore">Room Details</a></p>
+                  <p><a href="rooms.php#KingRoom" class="readmore">Room Details</a></p>
                 </div>
               </div>
             </div>
@@ -228,7 +214,7 @@ if (!isset($_SESSION['username'])) {
                 <h2 class="suite-title">Queen &amp; Double Bedroom</h2>
                 <div class="suite-excerpt pr-5">
                   <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger</p>
-                  <p><a href="#" class="readmore">Room Details</a></p>
+                  <p><a href="rooms.php#QueenRoom" class="readmore">Room Details</a></p>
                 </div>
               </div>
 
@@ -316,48 +302,6 @@ if (!isset($_SESSION['username'])) {
           </div>
         </div>
         
-
-        
-        
-
-        <div class="untree_co--site-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 section-heading" data-aos="fade-up">
-                <h3 class="text-left">News &amp; Events</h3>
-                <div class="w-75">
-                  <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
-                  </div>
-                <p><a href="#" class="readmore">All Posts</a></p>
-              </div>
-              <div class="col-md-4">
-                <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
-                  <a href="#" class="thumb"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-                  <div class="post-entry-contents">
-                    <h3><a href="#">How algorithms shape our world</a></h3>
-                    <div class="date">December 20, 2019 &bullet; by <a href="#">Joefrey Mahusay</a></div>
-                    <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
-                    <p><a href="#" class="readmore">Read more</a></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="post-entry" data-aos="fade-up" data-aos-delay="200">
-                  <a href="#" class="thumb"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-                  <div class="post-entry-contents">
-                    <h3><a href="#">How algorithms shape our world</a></h3>
-                    <div class="date">December 20, 2019 &bullet; by <a href="#">Joefrey Mahusay</a></div>
-                    <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
-                    <p><a href="#" class="readmore">Read more</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    
         <?php include 'specialRequest.php'; ?>
 
 

@@ -13,7 +13,7 @@
                   <ul class="list-unstyled">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Rooms</a></li>
-                    <li><a href="#">Amenities</a></li>
+                    <li><a href="#">My Booking</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>

@@ -53,7 +53,7 @@ unset($_SESSION['error']);
   <title>Sign-In Diamond Coast Hotel</title>
   <link rel="stylesheet" href="css/vendor/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="DiamondCoastHotelLogo.png">
 </head>
 <body>
 
