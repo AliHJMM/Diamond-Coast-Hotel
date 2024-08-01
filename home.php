@@ -145,9 +145,6 @@ if (!isset($_SESSION['username'])) {
                 <div class="col-md-8">
                   <div class="site-hero-contents text-center" data-aos="fade-up">
                     <h1 class="hero-heading">Diamond Coast Hotel</h1>
-                    <div class="sub-text">
-                      <p>Another free awesome templates for Hotels and any kind of website by <a href="#" target="_blank" class="text-white font-weight-bold">Diamond Coast Hotel</a>. See our <a href="#" class="text-white font-weight-bold">license page</a> for more usage details</p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -210,7 +207,7 @@ if (!isset($_SESSION['username'])) {
                 <h2 class="suite-title">King Bedroom</h2>
                 <div class="suite-excerpt">
                   <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
-                  <p><a href="#" class="readmore">Room Details</a></p>
+                  <p><a href="rooms.php#KingRoom" class="readmore">Room Details</a></p>
                 </div>
               </div>
             </div>
@@ -234,7 +231,7 @@ if (!isset($_SESSION['username'])) {
                 <h2 class="suite-title">Queen &amp; Double Bedroom</h2>
                 <div class="suite-excerpt pr-5">
                   <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger</p>
-                  <p><a href="#" class="readmore">Room Details</a></p>
+                  <p><a href="rooms.php#QueenRoom" class="readmore">Room Details</a></p>
                 </div>
               </div>
 
