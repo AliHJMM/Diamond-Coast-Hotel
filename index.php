@@ -1,24 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Sign-Up Diamond Coast Hotel</title>
-  <link rel="stylesheet" href="css/vendor/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.png">
-</head>
-
-
 <?php
+session_start();
+
 require_once 'config.php';
 
 // Start the session
-session_start();
 
 // Include the necessary functions for salting and hashing
 function generateRandomSalt() {
     return bin2hex(random_bytes(12)); // Generate a 24-character hexadecimal salt
+}
+
+// Function to check if username exists
+function usernameExists($username, $link) {
+    $sql = "SELECT * FROM users WHERE username = ?";
+    $stmt = mysqli_prepare($link, $sql);
+    mysqli_stmt_bind_param($stmt, "s", $username);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_store_result($stmt);
+    $num_rows = mysqli_stmt_num_rows($stmt);
+    mysqli_stmt_close($stmt);
+    return $num_rows > 0;
 }
 
 function insertUser($username, $password , $email) {
@@ -26,11 +27,23 @@ function insertUser($username, $password , $email) {
     if (!$link) {
         die("Connection failed: " . mysqli_connect_error());
     }
+    
+    // Check if username exists
+    if (usernameExists($username, $link)) {
+        $_SESSION['error'] = "Username already exists!";
+        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
+        header("Location: index.php");
+        exit();
+    }
+    
     $salt = generateRandomSalt();
     $hashedPassword = md5($password . $salt);
-    $sql = "INSERT INTO users (username, password_hash, salt, email) VALUES ('$username', '$hashedPassword', '$salt', '$email')";
+    $sql = "INSERT INTO users (username, password_hash, salt, email) VALUES (?, ?, ?, ?)";
+    $stmt = mysqli_prepare($link, $sql);
+    mysqli_stmt_bind_param($stmt, "ssss", $username, $hashedPassword, $salt, $email);
     
-    if (mysqli_query($link, $sql)) {
+    if (mysqli_stmt_execute($stmt)) {
         $_SESSION['username'] = $username;
         $_SESSION['email'] = $email;
         header("Location: home.php");
@@ -38,6 +51,8 @@ function insertUser($username, $password , $email) {
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($link);
     }
+    
+    mysqli_stmt_close($stmt);
     mysqli_close($link);
 }
 
@@ -76,8 +91,6 @@ unset($_SESSION['error']);
 unset($_SESSION['username']);
 unset($_SESSION['email']);
 ?>
-
-
 
 <!doctype html>
 <html lang="en">
@@ -160,4 +173,3 @@ unset($_SESSION['email']);
 </script>
 </body>
 </html>
-
