@@ -10,6 +10,7 @@
   <meta name="keywords" content="" />
 
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <link rel="stylesheet" href="css/vendor/icomoon/style.css">
   <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
@@ -53,11 +54,11 @@
     <nav class="untree_co--site-nav dark js-sticky-nav">
       <div class="container d-flex align-items-center">
         <div class="logo-wrap">
-          <a href="index.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
+          <a href="home.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
         </div>
         <div class="site-nav-ul-wrap text-center d-none d-lg-block">
           <ul class="site-nav-ul js-clone-nav">
-            <li><a href="index.php">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li class="has-children">
               <a href="rooms.php">Rooms</a>
               <ul class="dropdown">
@@ -80,20 +81,20 @@
         </div>
         <div class="icons-wrap text-md-right">
 
-          <ul class="icons-top d-none d-lg-block">
-            <li class="mr-4">
-              <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-facebook"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-twitter"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-instagram"></span></a>
-            </li>
-          </ul>
+        <ul class="icons-top d-none d-lg-block">
+        <li class="mr-4">
+            <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
+        </li>
+        <li>
+            <a href="#" id="darkModeToggle"><i class="fa-solid fa-moon" id="icon"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </li>
+    </ul>
 
           <!-- Mobile Toggle -->
           <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
@@ -216,6 +217,7 @@
 
 
   <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
 </body>
 
 </html>

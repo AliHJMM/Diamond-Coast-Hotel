@@ -31,6 +31,7 @@ $conn->close();
   <meta name="keywords" content="" />
 
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <link rel="stylesheet" href="css/vendor/icomoon/style.css">
   <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
@@ -80,19 +81,8 @@ $conn->close();
             <li class="has-children active">
               <a href="rooms.php">Rooms</a>
               <ul class="dropdown">
-                <li class="has-children">
+                <li>
                   <a href="#">King Bedroom</a>
-                  <ul class="dropdown">
-                    <li>
-                      <a href="#">King Bedroom</a>
-                    </li>
-                    <li>
-                      <a href="#">Queen &amp; Double Bedroom</a>
-                    </li>
-                    <li>
-                      <a href="#">Le Voila Suite</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a href="#">Queen &amp; Double Bedroom</a>
@@ -102,7 +92,7 @@ $conn->close();
                 </li>
               </ul>
             </li>
-            <li><a href="amenities.php">Amenities</a></li>
+            <li><a href="myBooking.php">My Booking</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="about.php">About Us</a></li>
             <li><a href="contact.php">Contact</a></li>
@@ -110,20 +100,20 @@ $conn->close();
         </div>
         <div class="icons-wrap text-md-right">
 
-          <ul class="icons-top d-none d-lg-block">
-            <li class="mr-4">
-              <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-facebook"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-twitter"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-instagram"></span></a>
-            </li>
-          </ul>
+        <ul class="icons-top d-none d-lg-block">
+        <li class="mr-4">
+            <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
+        </li>
+        <li>
+            <a href="#" id="darkModeToggle"><i class="fa-solid fa-moon" id="icon"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </li>
+    </ul>
 
           <!-- Mobile Toggle -->
           <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
@@ -243,6 +233,7 @@ $conn->close();
 
 
   <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
 </body>
 
 </html>
