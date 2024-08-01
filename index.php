@@ -11,6 +11,12 @@
 <body>
 
 <div class="untree_co--site-wrap">
+<div class="logo-wrap" style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 900; color: #ffffff; padding: 10px 0; background-color: #000; text-align: center; text-transform: uppercase; letter-spacing: 4px;">
+  Diamond Coast Hotel
+</div>
+
+
+
 
 
   <div class="untree_co--site-main">
