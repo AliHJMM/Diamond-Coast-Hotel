@@ -19,6 +19,7 @@ try {
 
 if (!$room) {
     echo "Room not found!";
+    header("Location: rooms.php");
     exit();
 }
 ?>

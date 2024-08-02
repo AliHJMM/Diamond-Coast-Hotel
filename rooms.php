@@ -111,7 +111,7 @@ $conn->close();
             <a href="#"><i class="fa-solid fa-user"></i></a>
         </li>
         <li>
-            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <a href="log-out.php"><i class="fa-solid fa-right-from-bracket"></i></a>
         </li>
     </ul>
 
