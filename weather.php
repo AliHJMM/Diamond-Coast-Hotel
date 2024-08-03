@@ -211,6 +211,7 @@
     </div>
 
     <?php include 'footer.php'; ?>
+    <?php include 'searchWrapper.php'; ?>
 
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
     <script src="js/vendor/popper.min.js"></script>
