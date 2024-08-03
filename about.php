@@ -75,7 +75,7 @@
             </li>
             <li><a href="myBooking.php">My Booking</a></li>
             <li><a href="gallery.php">Gallery</a></li>
-            <li class="active"><a href="about.php">About Us</a></li>
+            <li><a href="Weather.php">Weather</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
@@ -83,7 +83,7 @@
 
         <ul class="icons-top d-none d-lg-block">
         <li class="mr-4">
-            <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
+             <a href="#" class="js-search-toggle"><span class="fa fa-search"></span></a>
         </li>
         <li>
             <a href="#" id="darkModeToggle"><i class="fa-solid fa-moon" id="icon"></i></a>

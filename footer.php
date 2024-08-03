@@ -57,23 +57,7 @@
                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="home.php">Diamond Coast Hotel</a>. All Rights Reserved. Design by <a href="#" target="_blank" class="text-primary">Diamond Coast Hotel</a>
               </p>
             </div>
-            <div class="col-md-6 text-md-right">
-              <ul class="icons-top icons-dark">
-              <li>
-                <a href="#"><span class="icon-facebook"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-twitter"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-instagram"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-tripadvisor"></span></a>
-              </li>
-            </ul>
-
-            </div>
+          
           </div>
         </div>
         

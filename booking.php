@@ -97,16 +97,16 @@ if (!$room) {
                     <ul class="site-nav-ul js-clone-nav">
                         <li><a href="index.php">Home</a></li>
                         <li class="has-children"><a href="rooms.php">Rooms</a></li>
-                        <li><a href="myBooking.php">My Booking</a></li>
                         <li><a href="gallery.php">Gallery</a></li>
-                        <li class="active"><a href="about.php">About Us</a></li>
+                        <li><a href="about.php">About Us</a></li>
                         <li><a href="contact.php">Contact</a></li>
+                        <li><a href="weather.php">Weather</a></li>
                     </ul>
                 </div>
                 <div class="icons-wrap text-md-right">
                     <ul class="icons-top d-none d-lg-block">
                         <li class="mr-4">
-                            <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
+                        <a href="#" class="js-search-toggle"><span class="fa fa-search"></span></a>
                         </li>
                         <li>
                             <a href="#"><span class="icon-facebook"></span></a>
