@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.querySelector('body');
   const featuredRoomsSection = document.querySelector('.untree_co--site-section.float-left.pb-0.featured-rooms');
   const navbar = document.querySelector('.untree_co--site-nav');
+  const alertMessage = document.getElementById('alertMessage');
 
   toggle.addEventListener('click', function() {
     this.classList.toggle('fa-moon');
@@ -20,6 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
       changeColorToBlack(); // Set specific elements to black
       setArrowIconsColor('black'); // Set arrow icons to black in light mode
       setSliderCounterTextColor('#3e3e42'); // Set slider-counter text to default in light mode
+      if (alertMessage) {
+        alertMessage.style.color = '#3e3e42'; // Set alertMessage text to default color in light mode
+      }
     } else {
       // Dark mode
       body.style.backgroundColor = '#28283c';
@@ -32,6 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
       changeColorToWhite(); // Set specific elements to white in dark mode
       setArrowIconsColor('black'); // Set arrow icons to black in dark mode
       setSliderCounterTextColor('black'); // Set slider-counter text to black in dark mode
+      if (alertMessage) {
+        alertMessage.style.color = 'black'; // Set alertMessage text to black in dark mode
+      }
     }
   });
 

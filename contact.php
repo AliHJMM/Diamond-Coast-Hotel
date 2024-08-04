@@ -5,25 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="DiamondCoastHotelLogo.png">
-
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
   <link rel="stylesheet" href="css/vendor/icomoon/style.css">
   <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
   <link rel="stylesheet" href="css/vendor/aos.css">
   <link rel="stylesheet" href="css/vendor/animate.min.css">
   <link rel="stylesheet" href="css/vendor/bootstrap.css">
   <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-
-  <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
-
   <title>Diamond Coast Hotel</title>
-
   <style>
     /* Ensure text in header section is always white */
     .untree_co--site-hero * {
@@ -67,15 +60,9 @@
             <li class="has-children">
               <a href="rooms.php">Rooms</a>
               <ul class="dropdown">
-                <li>
-                  <a href="#">King Bedroom</a>
-                </li>
-                <li>
-                  <a href="#">Queen &amp; Double Bedroom</a>
-                </li>
-                <li>
-                  <a href="#">Le Voila Suite</a>
-                </li>
+                <li><a href="#">King Bedroom</a></li>
+                <li><a href="#">Queen &amp; Double Bedroom</a></li>
+                <li><a href="#">Le Voila Suite</a></li>
               </ul>
             </li>
             <li><a href="myBooking.php">My Booking</a></li>
@@ -99,8 +86,6 @@
               <a href="log-out.php"><i class="fa-solid fa-right-from-bracket"></i></a>
             </li>
           </ul>
-
-          <!-- Mobile Toggle -->
           <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
             <span></span>
           </a>
@@ -125,70 +110,6 @@
         </div>
       </div>
         
-        <div class="untree_co--site-section">
-          <div class="container">
-            
-              <div class="row">
-                <div class="col-12" data-aos="fade-up">
-                  <h2 class="display-4 mb-5">Fill the form</h2>
-                </div>
-                <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-    <form id="contactForm" action="#">
-        <div class="form-group">
-            <label for="name">Your Name *</label>
-            <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Your Email *</label> <!-- corrected ID to "email" -->
-            <input type="text" class="form-control" id="email" required>
-        </div>
-        <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" class="form-control" id="subject">
-        </div>
-        <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Send" class="btn btn-black px-5 text-white">
-        </div>
-    </form>
-</div>
-
-                <div class="col-md-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
-                  <div class="media-29190">
-                    <span class="label">Email</span>
-                    <p><a href="#">malasfoor04@gmail.com</a></p>
-                  </div>
-                  <div class="media-29190">
-                    <span class="label">Phone</span>
-                    <p><a href="#">+973 37399714</a></p>
-                  </div>
-                  <div class="media-29190">
-                    <span class="label">Address</span>
-                    <p>123 Beachfront Avenue, Aberdeen,
-                    Freetown, Sierra Leone</p>
-                  </div>
-                  <div class="media-29190">
-                    <span class="label">Social</span>
-                    <ul class="icons-top icons-dark">
-                      <li>
-                        <a href="#"><span class="icon-facebook"></span></a>
-                      </li>
-                      <li>
-                        <a href="#"><span class="icon-twitter"></span></a>
-                      </li>
-                      <li>
-                        <a href="#"><span class="icon-instagram"></span></a>
-                      </li>
-                      <li>
-                        <a href="#"><span class="icon-tripadvisor"></span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
       <div class="untree_co--site-section">
         <div class="container">
           <div class="row">
@@ -196,14 +117,14 @@
               <h2 class="display-4 mb-5">Fill the form</h2>
             </div>
             <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-              <form action="#">
+              <form id="contactForm" action="#">
                 <div class="form-group">
                   <label for="name">Your Name *</label>
-                  <input type="text" class="form-control" id="name">
+                  <input type="text" class="form-control" id="name" required>
                 </div>
                 <div class="form-group">
-                  <label for="email2">Your Email *</label>
-                  <input type="text" class="form-control" id="email2">
+                  <label for="email">Your Email *</label>
+                  <input type="text" class="form-control" id="email" required>
                 </div>
                 <div class="form-group">
                   <label for="subject">Subject</label>
@@ -211,14 +132,15 @@
                 </div>
                 <div class="form-group">
                   <label for="message">Message *</label>
-                  <textarea name="message" class="form-control" id="message" cols="30" rows="10"></textarea>
+                  <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
                 </div>
                 <div class="form-group">
                   <input type="submit" value="Send" class="btn btn-black px-5 text-white">
                 </div>
               </form>
             </div>
-            <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-md-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
               <div class="media-29190">
                 <span class="label">Email</span>
                 <p><a href="#">info@DiamondCoast.com</a></p>
@@ -234,18 +156,10 @@
               <div class="media-29190">
                 <span class="label">Social</span>
                 <ul class="icons-top icons-dark">
-                  <li>
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="icon-tripadvisor"></span></a>
-                  </li>
+                  <li><a href="#"><span class="icon-facebook"></span></a></li>
+                  <li><a href="#"><span class="icon-twitter"></span></a></li>
+                  <li><a href="#"><span class="icon-instagram"></span></a></li>
+                  <li><a href="#"><span class="icon-tripadvisor"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -257,6 +171,7 @@
     </main>
     <?php include 'footer.php'; ?>
   </div>
+  
   <!-- Search -->
   <?php include 'searchWrapper.php'; ?>
 
@@ -275,87 +190,63 @@
   <script src="js/vendor/ScrollMagic.min.js"></script>
   <script src="js/vendor/scrollmagic.animation.gsap.min.js"></script>
   <script src="js/vendor/debug.addIndicators.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
 
-  <script src="js/main.js" defer></script>
-  <script src="js/darkmode.js" defer></script>
-</body>
-
-</html>
-    <script src="js/vendor/owl.carousel.min.js"></script>
-    
-    <script src="js/vendor/jarallax.min.js"></script>
-    <script src="js/vendor/jarallax-element.min.js"></script>
-    <script src="js/vendor/ofi.min.js"></script>
-
-    <script src="js/vendor/aos.js"></script>
-
-    <script src="js/vendor/jquery.lettering.js"></script>
-    <script src="js/vendor/jquery.sticky.js"></script>
-
-    <script src="js/vendor/jquery.fancybox.min.js"></script>
-
-    <script src="js/vendor/TweenMax.min.js"></script>
-    <script src="js/vendor/ScrollMagic.min.js"></script>
-    <script src="js/vendor/scrollmagic.animation.gsap.min.js"></script>
-    <script src="js/vendor/debug.addIndicators.min.js"></script>
-
-
-    <script src="js/main.js"></script>
-    <script src="js/darkmode.js"></script>
-    <div id="customAlert" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 style="text-align:center;">DiamondCoast</h2>
-    <p id="alertMessage" style="text-align:center; font-weight:bold;"></p>
-    <button id="okButton" class="btn btn-black">OK</button>
+  <div id="customAlert" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2 style="text-align:center;">Diamond Coast</h2>
+      <p id="alertMessage" style="text-align:center; font-weight:bold;"></p>
+      <button id="okButton" class="btn btn-black">OK</button>
+    </div>
   </div>
-</div>
 
-  </body>
   <script>
-  // Get modal element
-  var modal = document.getElementById("customAlert");
-  var modalMessage = document.getElementById("alertMessage");
-  var closeButton = document.querySelector(".close-button");
-  var okButton = document.getElementById("okButton");
+    // Get modal element
+    var modal = document.getElementById("customAlert");
+    var modalMessage = document.getElementById("alertMessage");
+    var closeButton = document.querySelector(".close-button");
+    var okButton = document.getElementById("okButton");
 
-  // Function to show the modal with a custom message
-  function showAlert(message) {
-    modalMessage.textContent = message;
-    modal.style.display = "block";
-  }
+    // Function to show the modal with a custom message
+    function showAlert(message) {
+      modalMessage.textContent = message;
+      modal.style.display = "block";
+    }
 
-  // Close the modal when the user clicks the close button or OK button
-  closeButton.onclick = function() {
-    modal.style.display = "none";
-  }
-  okButton.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  // Close the modal if the user clicks outside of the modal content
-  window.onclick = function(event) {
-    if (event.target == modal) {
+    // Close the modal when the user clicks the close button or OK button
+    closeButton.onclick = function() {
       modal.style.display = "none";
     }
-  }
+    okButton.onclick = function() {
+      modal.style.display = "none";
+    }
 
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    // Close the modal if the user clicks outside of the modal content
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
 
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-    var message = document.getElementById('message').value;
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
 
-    var confirmationMessage = "Thank you, " + name + "! We have received your message and will get back to you at " + email + " soon.";
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value;
 
-    // Use the custom alert
-    showAlert(confirmationMessage);
+      var confirmationMessage = "Thank you, " + name + "! We have received your message and will get back to you at " + email + " soon.";
 
-    // Optionally, you can reset the form after submission
-    document.getElementById('contactForm').reset();
-  });
-</script>
+      // Use the custom alert
+      showAlert(confirmationMessage);
 
+      // Optionally, you can reset the form after submission
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+
+</body>
 </html>
