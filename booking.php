@@ -189,7 +189,8 @@ if (!$room) {
     <script src="js/vendor/ScrollMagic.min.js"></script>
     <script src="js/vendor/scrollmagic.animation.gsap.min.js"></script>
     <script src="js/vendor/debug.addIndicators.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+  <script src="js/darkmode.js" defer></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {

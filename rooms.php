@@ -219,8 +219,8 @@ $conn->close();
   <script src="js/vendor/debug.addIndicators.min.js"></script>
 
 
-  <script src="js/main.js"></script>
-  <script src="js/darkmode.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/darkmode.js" defer></script>
 </body>
 
 </html>

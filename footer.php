@@ -11,12 +11,12 @@
                 <div class="col-md-3">
                   <h3>Navigation</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">My Booking</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="whiteTxt">Home</a></li>
+                    <li><a href="#" class="whiteTxt">Rooms</a></li>
+                    <li><a href="#" class="whiteTxt">My Booking</a></li>
+                    <li><a href="#" class="whiteTxt">Gallery</a></li>
+                    <li><a href="#" class="whiteTxt">About Us</a></li>
+                    <li><a href="#" class="whiteTxt">Contact</a></li>
                   </ul>
                 </div>
                 <div class="col-md-9 ml-auto">
@@ -28,12 +28,12 @@
                     <div class="col-md-6">
                       <h3>Telephone</h3>
                       <p>
-                        <a href="#">+973 3390 7130</a> <br>
-                        <a href="#">+973 3511 4629</a> <br>
-                        <a href="#">+973 3739 9714</a> <br>
-                        <a href="#">+973 3638 2127</a> <br>
-                        <a href="#">+973 3215 5844</a> <br>
-                        <a href="#">+973 3978 0645</a> <br>
+                        <a href="#" class="whiteTxt">+973 3390 7130</a> <br>
+                        <a href="#" class="whiteTxt">+973 3511 4629</a> <br>
+                        <a href="#" class="whiteTxt">+973 3739 9714</a> <br>
+                        <a href="#" class="whiteTxt">+973 3638 2127</a> <br>
+                        <a href="#" class="whiteTxt">+973 3215 5844</a> <br>
+                        <a href="#" class="whiteTxt">+973 3978 0645</a> <br>
                       </p>
                     </div>
                   </div>
