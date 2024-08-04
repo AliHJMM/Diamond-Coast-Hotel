@@ -106,7 +106,7 @@
 
                         if ($weatherData['cod'] == 200) {
                             echo "<div class='weather-summary'>";
-                            echo "<h2 class=''>Weather Information for " . $weatherData['name'] . ":</h2>";
+                            echo "<h2 class='whiteTxt'>Weather Information for " . $weatherData['name'] . ":</h2>";
 
                             echo "<div class='weather-main row'>";
                             echo "<div class='col text-center'>";

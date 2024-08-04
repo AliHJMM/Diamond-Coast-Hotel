@@ -29,11 +29,11 @@
     .untree_co--site-hero * {
       color: white !important;
     }
+
   </style>
 </head>
 
 <body>
-
   <div id="untree_co--overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
@@ -55,7 +55,6 @@
   </nav>
 
   <div class="untree_co--site-wrap">
-
     <nav class="untree_co--site-nav dark js-sticky-nav">
       <div class="container d-flex align-items-center">
         <div class="logo-wrap">
@@ -67,15 +66,9 @@
             <li class="has-children">
               <a href="rooms.php">Rooms</a>
               <ul class="dropdown">
-                <li>
-                  <a href="#">King Bedroom</a>
-                </li>
-                <li>
-                  <a href="#">Queen &amp; Double Bedroom</a>
-                </li>
-                <li>
-                  <a href="#">Le Voila Suite</a>
-                </li>
+                <li><a href="#">King Bedroom</a></li>
+                <li><a href="#">Queen &amp; Double Bedroom</a></li>
+                <li><a href="#">Le Voila Suite</a></li>
               </ul>
             </li>
             <li><a href="myBooking.php">My Booking</a></li>
@@ -99,7 +92,6 @@
               <a href="log-out.php"><i class="fa-solid fa-right-from-bracket"></i></a>
             </li>
           </ul>
-
           <!-- Mobile Toggle -->
           <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
             <span></span>
@@ -109,8 +101,7 @@
     </nav>
 
     <main class="untree_co--site-main">
-
-      <div class="untree_co--site-hero inner-page bg-light" style="background-image: url('images/about_us.jpg'); background-size: cover; background-position: center;">
+      <div class="untree_co--site-hero inner-page bg-light" style="background-image: url('images/about_us.png'); background-size: cover; background-position: center;">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-9">
@@ -129,7 +120,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12" data-aos="fade-up">
-              <h2 class="display-4 mb-5">Our Story</h2>
+              <h2 class="display-4 mb-5 whiteTxt">Our Story</h2>
             </div>
             <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
               <p>Founded in 2020, Diamond Coast Hotel has been committed to providing world-class hospitality and unforgettable experiences to our guests. Nestled in the heart of New York, our hotel boasts luxurious accommodations, top-notch amenities, and exceptional service.</p>
