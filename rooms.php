@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
 
 require_once 'config.php';
 $conn = getDBConnection();
-$sql = "SELECT * FROM rooms";
+$sql = "SELECT * FROM room_types";
 $result = $conn->query($sql);
 
 $rooms = [];
@@ -148,7 +148,7 @@ $conn->close();
       <div class="container-fluid px-md-0">
     <?php foreach ($rooms as $room): ?>
     <div class="row no-gutters align-items-stretch room-animate site-section">
-        <div class="col-md-7 <?php echo ($room['room_id'] % 2 == 0) ? 'order-md-2' : ''; ?> img-wrap" data-jarallax-element="-100">
+        <div class="col-md-7 <?php echo ($room['id'] % 2 == 0) ? 'order-md-2' : ''; ?> img-wrap" data-jarallax-element="-100">
             <div class="bg-image h-100" style="background-color: #efefef; background-image: url('images/<?php echo htmlspecialchars($room['image_url']); ?>');"></div>
         </div>
         <div class="col-md-5">
@@ -169,7 +169,7 @@ $conn->close();
                                     <li><?php echo htmlspecialchars(trim($amenity)); ?></li>
                                     <?php endforeach; ?>
                                 </ul>
-                                <a href="booking.php?room_id=<?php echo $room["room_id"];?>" class="btn btn-primary mt-4">Book Now</a>
+                                <a href="booking.php?room_type_id=<?php echo $room["id"];?>" class="btn btn-primary mt-4">Book Now</a>
                             </div>
                         </div>
                     </div>

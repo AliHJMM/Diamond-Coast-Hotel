@@ -1,7 +1,7 @@
 <?php
 session_start(); // Start the session
 require_once 'config.php';
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
     header("Location: sign-in.php");
     exit();
 }
@@ -9,9 +9,9 @@ if (!isset($_SESSION['username'])) {
 try {
     $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $room_id = isset($_GET['room_id']) ? (int)$_GET['room_id'] : 0;
-    $stmt = $pdo->prepare("SELECT * FROM rooms WHERE room_id = :room_id");
-    $stmt->execute(['room_id' => $room_id]);
+    $room_type_id = isset($_GET['room_type_id']) ? $_GET['room_type_id'] : null;
+    $stmt = $pdo->prepare("SELECT * FROM room_types WHERE id = :room_type_id");
+    $stmt->execute(['room_type_id' => $room_type_id]);
     $room = $stmt->fetch(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
@@ -88,43 +88,6 @@ if (!$room) {
     </nav>
 
     <div class="untree_co--site-wrap">
-        <nav class="untree_co--site-nav js-sticky-nav">
-            <div class="container d-flex align-items-center">
-                <div class="logo-wrap">
-                    <a href="home.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
-                </div>
-                <div class="site-nav-ul-wrap text-center d-none d-lg-block">
-                    <ul class="site-nav-ul js-clone-nav">
-                        <li><a href="index.php">Home</a></li>
-                        <li class="has-children"><a href="rooms.php">Rooms</a></li>
-                        <li><a href="myBooking.php">My Booking</a></li>
-                        <li><a href="gallery.php">Gallery</a></li>
-                        <li class="active"><a href="about.php">About Us</a></li>
-                        <li><a href="contact.php">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="icons-wrap text-md-right">
-                    <ul class="icons-top d-none d-lg-block">
-                        <li class="mr-4">
-                            <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="icon-facebook"></span></a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="icon-twitter"></span></a>
-                        </li>
-                        <li>
-                            <a href="#"><span class="icon-instagram"></span></a>
-                        </li>
-                    </ul>
-                    <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-                        <span></span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-
         <div class="untree_co--site-main">
             <div class="untree_co--site-section">
                 <div class="container">
@@ -144,8 +107,8 @@ if (!$room) {
                                 </div>
                             </div>
                             <div class="booking-form-container">
-                                <form action="process_booking.php" method="post" class="booking-form" data-aos="fade-up">
-                                    <input type="hidden" name="room_id" value="<?php echo htmlspecialchars($room['room_id']); ?>">
+                                <form action="process_booking.php" method="post" class="booking-form" data-aos="fade-up" onsubmit="return validateDates()">
+                                    <input type="hidden" name="room_type_id" value="<?php echo htmlspecialchars($room['id']); ?>">
                                     <div class="form-group">
                                         <label for="start_date">Start Date</label>
                                         <input type="date" name="start_date" id="start_date" class="form-control" required>
@@ -155,7 +118,7 @@ if (!$room) {
                                         <input type="date" name="end_date" id="end_date" class="form-control" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="total_price">Total Price</label>
+                                        <label for="total_price">Total Price ($)</label>
                                         <input type="text" name="total_price" id="total_price" class="form-control" readonly>
                                     </div>
                                     <div class="form-group">
@@ -192,36 +155,48 @@ if (!$room) {
     <script src="js/main.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Set the minimum date for the start date input
-            var today = new Date().toISOString().split('T')[0];
-            document.getElementById("start_date").setAttribute('min', today);
+    document.addEventListener('DOMContentLoaded', function () {
+        var startDateInput = document.getElementById("start_date");
+        var endDateInput = document.getElementById("end_date");
 
-            // Event listener for changes in the start date
-            document.getElementById("start_date").addEventListener('change', function () {
-                var startDate = document.getElementById("start_date").value;
-                document.getElementById("end_date").setAttribute('min', startDate);
-                calculateTotalPrice();
-            });
-
-            // Event listener for changes in the end date
-            document.getElementById("end_date").addEventListener('change', calculateTotalPrice);
-
-            // Function to calculate the total price
-            function calculateTotalPrice() {
-                var startDate = new Date(document.getElementById("start_date").value);
-                var endDate = new Date(document.getElementById("end_date").value);
-                if (startDate && endDate && startDate <= endDate) {
-                    var diffTime = Math.abs(endDate - startDate);
-                    var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                    var pricePerNight = <?php echo $room['price']; ?>; // Get price per night from PHP
-                    var totalPrice = diffDays * pricePerNight;
-                    document.getElementById("total_price").value = '$' + totalPrice;
-                } else {
-                    document.getElementById("total_price").value = '';
-                }
-            }
+        startDateInput.addEventListener('change', function () {
+            validateDates();
+            calculateTotalPrice();
         });
-    </script>
+
+        endDateInput.addEventListener('change', function () {
+            validateDates();
+            calculateTotalPrice();
+        });
+
+        function validateDates() {
+            var startDate = new Date(startDateInput.value);
+            var endDate = new Date(endDateInput.value);
+
+            if (startDate >= endDate) {
+                endDateInput.setCustomValidity("End date must be after the start date.");
+            } else if (startDate.getTime() === endDate.getTime()) {
+                endDateInput.setCustomValidity("Start date and end date cannot be the same.");
+            } else {
+                endDateInput.setCustomValidity(""); // Clear the custom validity message
+            }
+        }
+
+        function calculateTotalPrice() {
+            var startDate = new Date(startDateInput.value);
+            var endDate = new Date(endDateInput.value);
+            if (startDate && endDate && startDate < endDate) {
+                var diffTime = Math.abs(endDate - startDate);
+                var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                var pricePerNight = <?php echo $room['price']; ?>;
+                var totalPrice = diffDays * pricePerNight;
+                document.getElementById("total_price").value = totalPrice;
+            } else {
+                document.getElementById("total_price").value = '';
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
