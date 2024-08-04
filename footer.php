@@ -11,12 +11,12 @@
                 <div class="col-md-3">
                   <h3>Navigation</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">My Booking</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="whiteTxt">Home</a></li>
+                    <li><a href="#" class="whiteTxt">Rooms</a></li>
+                    <li><a href="#" class="whiteTxt">My Booking</a></li>
+                    <li><a href="#" class="whiteTxt">Gallery</a></li>
+                    <li><a href="#" class="whiteTxt">About Us</a></li>
+                    <li><a href="#" class="whiteTxt">Contact</a></li>
                   </ul>
                 </div>
                 <div class="col-md-9 ml-auto">
@@ -28,26 +28,26 @@
                     <div class="col-md-6">
                       <h3>Telephone</h3>
                       <p>
-                        <a href="#">+973 3390 7130</a> <br>
-                        <a href="#">+973 3511 4629</a> <br>
-                        <a href="#">+973 3739 9714</a> <br>
-                        <a href="#">+973 3638 2127</a> <br>
-                        <a href="#">+973 3215 5844</a> <br>
-                        <a href="#">+973 3978 0645</a> <br>
+                        <a href="#" class="whiteTxt">+973 3390 7130</a> <br>
+                        <a href="#" class="whiteTxt">+973 3511 4629</a> <br>
+                        <a href="#" class="whiteTxt">+973 3739 9714</a> <br>
+                        <a href="#" class="whiteTxt">+973 3638 2127</a> <br>
+                        <a href="#" class="whiteTxt">+973 3215 5844</a> <br>
+                        <a href="#" class="whiteTxt">+973 3978 0645</a> <br>
                       </p>
                     </div>
                   </div>
 
-                  <h3 class="mb-0">Join our newsletter</h3>
-                  <p>Be the first to know our latest updates and news!</p>
-                  <form action="#" method="" class="form-subscribe">
+                  <div class="newsletter-subscribe">
+                <h3 class="mb-0">Join our newsletter</h3>
+                   <p>Be the first to know our latest updates and news!</p>
+                  <form id="subscribeForm" class="form-subscribe" action="#">
                     <div class="form-group d-flex">
-                      <input type="email" class="form-control mr-2" placeholder="Enter your email">
+                        <input type="email" class="form-control mr-2" id="subscribeEmail" placeholder="Enter your email" required>
                       <input type="submit" value="Subscribe" class="btn btn-black px-4 text-white">
-                    </div>
+                     </div>
                   </form>
-                </div>
-                
+              </div>
               </div>
             </div>
           </div>
@@ -57,24 +57,51 @@
                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="home.php">Diamond Coast Hotel</a>. All Rights Reserved. Design by <a href="#" target="_blank" class="text-primary">Diamond Coast Hotel</a>
               </p>
             </div>
-            <div class="col-md-6 text-md-right">
-              <ul class="icons-top icons-dark">
-              <li>
-                <a href="#"><span class="icon-facebook"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-twitter"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-instagram"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-tripadvisor"></span></a>
-              </li>
-            </ul>
-
-            </div>
+          
           </div>
         </div>
         
       </footer>
+      <div id="customAlert" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2 style="text-align:center;">DiamondCoast</h2>
+    <p id="alertMessage" style ="text-align:center; font-weight:bold"></p>
+    <button id="okButton" class="btn btn-black">OK</button>
+  </div>
+</div>
+<script>
+  // Reusing the modal from the previous example
+  var modal = document.getElementById("customAlert");
+  var modalMessage = document.getElementById("alertMessage");
+  var closeButton = document.querySelector(".close-button");
+  var okButton = document.getElementById("okButton");
+
+  function showAlert(message) {
+    modalMessage.textContent = message;
+    modal.style.display = "block";
+  }
+
+  closeButton.onclick = function() {
+    modal.style.display = "none";
+  }
+  okButton.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  // Handling the subscription form submission
+  document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var subscribeEmail = document.getElementById('subscribeEmail').value;
+
+    var subscriptionMessage = "Thank you! You have been subscribed with the email ( " + subscribeEmail+ " )";
+    showAlert(subscriptionMessage);
+
+    document.getElementById('subscribeForm').reset();
+  });
+</script>

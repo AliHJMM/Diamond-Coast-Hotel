@@ -73,9 +73,8 @@ if (!isset($_SESSION['username'])) {
         </div>
         <div class="site-nav-ul-wrap text-center d-none d-lg-block">
           <ul class="site-nav-ul js-clone-nav">
-            <li><a href="home.php">Home</a></li>
             <li class="has-children">
-              <a href="rooms.php">Rooms</a>
+              <a href="rooms.php" class="active">Rooms</a>
               <ul class="dropdown">
                 <li>
                   <a href="#">King Bedroom</a>
@@ -88,9 +87,10 @@ if (!isset($_SESSION['username'])) {
                 </li>
               </ul>
             </li>
-            <li><a href="myBooking.php">My Booking</a></li>
+            <li><a href="myBooking.php" >My Booking</a></li>
             <li><a href="gallery.php">Gallery</a></li>
-            <li class="active"><a href="about.php">About Us</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="weather.php">Weather</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
@@ -98,7 +98,7 @@ if (!isset($_SESSION['username'])) {
 
         <ul class="icons-top d-none d-lg-block">
         <li class="mr-4">
-            <a href="#" class="js-search-toggle"><span class="icon-search2"></span></a>
+        <a href="#" class="js-search-toggle"><span class="fa fa-search"></span></a>
         </li>
         <li>
             <a href="#" id="darkModeToggle"><i class="fa-solid fa-moon" id="icon"></i></a>
@@ -190,10 +190,10 @@ if (!isset($_SESSION['username'])) {
             </div> <!-- .suite -->
 
             <div class="suite-contents" data-jarallax-element="50">
-              <h2 class="suite-title">King Bedroom</h2>
+              <h2 class="suite-title whiteTxt">King Bedroom</h2>
               <div class="suite-excerpt">
                 <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
-                <p><a href="rooms.php#KingRoom" class="readmore">Room Details</a></p>
+                <p><a href="rooms.php#KingRoom" class="readmore whiteTxt">Room Details</a></p>
               </div>
             </div>
           </div>
@@ -214,10 +214,10 @@ if (!isset($_SESSION['username'])) {
             </div>
 
             <div class="suite-contents" data-jarallax-element="50">
-              <h2 class="suite-title">Queen &amp; Double Bedroom</h2>
+              <h2 class="suite-title whiteTxt">Queen &amp; Double Bedroom</h2>
               <div class="suite-excerpt pr-5">
                 <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger</p>
-                <p><a href="rooms.php#QueenRoom" class="readmore">Room Details</a></p>
+                <p><a href="rooms.php#QueenRoom" class="readmore whiteTxt">Room Details</a></p>
               </div>
             </div>
 
@@ -244,7 +244,7 @@ if (!isset($_SESSION['username'])) {
                 <h3>Free Self-Parking</h3>
                 <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
                 <p>
-                <p><a href="#" class="readmore reverse">Read More</a></p>
+                <p><a href="#" class="readmore reverse whiteTxt whiteTxt">Read More</a></p>
                 </p>
               </div>
             </div>
@@ -257,7 +257,7 @@ if (!isset($_SESSION['username'])) {
                 <h3>High speed Internet access</h3>
                 <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
                 <p>
-                <p><a href="#" class="readmore reverse">Read More</a></p>
+                <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
                 </p>
               </div>
             </div>
@@ -269,7 +269,7 @@ if (!isset($_SESSION['username'])) {
                 <h3>Complimentary WiFi in public areas</h3>
                 <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
                 <p>
-                <p><a href="#" class="readmore reverse">Read More</a></p>
+                <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
                 </p>
               </div>
             </div>
@@ -282,7 +282,7 @@ if (!isset($_SESSION['username'])) {
                 <h3>Elevators</h3>
                 <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
                 <p>
-                <p><a href="#" class="readmore reverse">Read More</a></p>
+                <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
                 </p>
               </div>
             </div>
@@ -296,7 +296,7 @@ if (!isset($_SESSION['username'])) {
                 <h3>Meeting rooms</h3>
                 <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
                 <p>
-                <p><a href="#" class="readmore reverse">Read More</a></p>
+                <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
                 </p>
               </div>
             </div>
@@ -308,7 +308,7 @@ if (!isset($_SESSION['username'])) {
                 <h3>Laundry and Valet service</h3>
                 <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
                 <p>
-                <p><a href="#" class="readmore reverse">Read More</a></p>
+                <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
                 </p>
               </div>
             </div>
@@ -348,8 +348,10 @@ if (!isset($_SESSION['username'])) {
   <script src="js/vendor/debug.addIndicators.min.js"></script>
 
 
-  <script src="js/main.js"></script>
-  <script src="js/darkmode.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/darkmode.js" defer></script>
+
+  <script></script>
 </body>
 
 </html>

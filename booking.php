@@ -88,6 +88,43 @@ if (!$room) {
     </nav>
 
     <div class="untree_co--site-wrap">
+        <nav class="untree_co--site-nav js-sticky-nav">
+            <div class="container d-flex align-items-center">
+                <div class="logo-wrap">
+                    <a href="home.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
+                </div>
+                <div class="site-nav-ul-wrap text-center d-none d-lg-block">
+                    <ul class="site-nav-ul js-clone-nav">
+                        <li><a href="index.php">Home</a></li>
+                        <li class="has-children"><a href="rooms.php">Rooms</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="weather.php">Weather</a></li>
+                    </ul>
+                </div>
+                <div class="icons-wrap text-md-right">
+                    <ul class="icons-top d-none d-lg-block">
+                        <li class="mr-4">
+                        <a href="#" class="js-search-toggle"><span class="fa fa-search"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-instagram"></span></a>
+                        </li>
+                    </ul>
+                    <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
         <div class="untree_co--site-main">
             <div class="untree_co--site-section">
                 <div class="container">
@@ -152,7 +189,8 @@ if (!$room) {
     <script src="js/vendor/ScrollMagic.min.js"></script>
     <script src="js/vendor/scrollmagic.animation.gsap.min.js"></script>
     <script src="js/vendor/debug.addIndicators.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+  <script src="js/darkmode.js" defer></script>
 
     <script>
     document.addEventListener('DOMContentLoaded', function () {

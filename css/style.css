@@ -2046,3 +2046,26 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   left: 50%;
   transform: translate(-50%, -50%); /* Centers the icon */
 }
+
+.dark-mode {
+  background-color: #292524;
+  color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode a,
+.dark-mode span,
+.dark-mode .untree_co--site-section {
+  color: white !important;
+}
+
+.dark-mode .featured-rooms {
+  background-color: #292524;
+}
+
