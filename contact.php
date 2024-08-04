@@ -129,41 +129,42 @@
                   <h2 class="display-4 mb-5">Fill the form</h2>
                 </div>
                 <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                  
-                  <form action="#">
-                    <div class="form-group">
-                      <label for="name">Your Name *</label>
-                      <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                      <label for="email2">Your Email *</label>
-                      <input type="text" class="form-control" id="email2">
-                    </div>
-                    <div class="form-group">
-                      <label for="subject">Subject</label>
-                      <input type="text" class="form-control" id="subject">
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message *</label>
-                      <textarea name="message" class="form-control" id="message" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" value="Send" class="btn btn-black px-5 text-white">
-                    </div>
-                  </form>
-                </div>
+    <form id="contactForm" action="#">
+        <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email *</label> <!-- corrected ID to "email" -->
+            <input type="text" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject">
+        </div>
+        <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Send" class="btn btn-black px-5 text-white">
+        </div>
+    </form>
+</div>
+
                 <div class="col-md-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
                   <div class="media-29190">
                     <span class="label">Email</span>
-                    <p><a href="#">info@DiamondCoast.com</a></p>
+                    <p><a href="#">malasfoor04@gmail.com</a></p>
                   </div>
                   <div class="media-29190">
                     <span class="label">Phone</span>
-                    <p><a href="#">+30 931 3829 399</a></p>
+                    <p><a href="#">+973 37399714</a></p>
                   </div>
                   <div class="media-29190">
                     <span class="label">Address</span>
-                    <p>273 South Riverview Rd. New York, NY 10011</p>
+                    <p>123 Beachfront Avenue, Aberdeen,
+                    Freetown, Sierra Leone</p>
                   </div>
                   <div class="media-29190">
                     <span class="label">Social</span>
@@ -222,5 +223,60 @@
 
     <script src="js/main.js"></script>
     <script src="js/darkmode.js"></script>
+    <div id="customAlert" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2 style="text-align:center;">DiamondCoast</h2>
+    <p id="alertMessage" style="text-align:center; font-weight:bold;"></p>
+    <button id="okButton" class="btn btn-black">OK</button>
+  </div>
+</div>
+
   </body>
+  <script>
+  // Get modal element
+  var modal = document.getElementById("customAlert");
+  var modalMessage = document.getElementById("alertMessage");
+  var closeButton = document.querySelector(".close-button");
+  var okButton = document.getElementById("okButton");
+
+  // Function to show the modal with a custom message
+  function showAlert(message) {
+    modalMessage.textContent = message;
+    modal.style.display = "block";
+  }
+
+  // Close the modal when the user clicks the close button or OK button
+  closeButton.onclick = function() {
+    modal.style.display = "none";
+  }
+  okButton.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Close the modal if the user clicks outside of the modal content
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    var confirmationMessage = "Thank you, " + name + "! We have received your message and will get back to you at " + email + " soon.";
+
+    // Use the custom alert
+    showAlert(confirmationMessage);
+
+    // Optionally, you can reset the form after submission
+    document.getElementById('contactForm').reset();
+  });
+</script>
+
 </html>

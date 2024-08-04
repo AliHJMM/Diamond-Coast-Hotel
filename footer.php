@@ -38,16 +38,16 @@
                     </div>
                   </div>
 
-                  <h3 class="mb-0">Join our newsletter</h3>
-                  <p>Be the first to know our latest updates and news!</p>
-                  <form action="#" method="" class="form-subscribe">
+                  <div class="newsletter-subscribe">
+                <h3 class="mb-0">Join our newsletter</h3>
+                   <p>Be the first to know our latest updates and news!</p>
+                  <form id="subscribeForm" class="form-subscribe" action="#">
                     <div class="form-group d-flex">
-                      <input type="email" class="form-control mr-2" placeholder="Enter your email">
+                        <input type="email" class="form-control mr-2" id="subscribeEmail" placeholder="Enter your email" required>
                       <input type="submit" value="Subscribe" class="btn btn-black px-4 text-white">
-                    </div>
+                     </div>
                   </form>
-                </div>
-                
+              </div>
               </div>
             </div>
           </div>
@@ -62,3 +62,46 @@
         </div>
         
       </footer>
+      <div id="customAlert" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2 style="text-align:center;">DiamondCoast</h2>
+    <p id="alertMessage" style ="text-align:center; font-weight:bold"></p>
+    <button id="okButton" class="btn btn-black">OK</button>
+  </div>
+</div>
+<script>
+  // Reusing the modal from the previous example
+  var modal = document.getElementById("customAlert");
+  var modalMessage = document.getElementById("alertMessage");
+  var closeButton = document.querySelector(".close-button");
+  var okButton = document.getElementById("okButton");
+
+  function showAlert(message) {
+    modalMessage.textContent = message;
+    modal.style.display = "block";
+  }
+
+  closeButton.onclick = function() {
+    modal.style.display = "none";
+  }
+  okButton.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  // Handling the subscription form submission
+  document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var subscribeEmail = document.getElementById('subscribeEmail').value;
+
+    var subscriptionMessage = "Thank you! You have been subscribed with the email ( " + subscribeEmail+ " )";
+    showAlert(subscriptionMessage);
+
+    document.getElementById('subscribeForm').reset();
+  });
+</script>
