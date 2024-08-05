@@ -89,7 +89,12 @@ CREATE TABLE `room_types` (
 --
 
 INSERT INTO `room_types` (`id`, `name`, `description`, `amenities`, `price`, `image_url`) VALUES
-(1, 'King Bedroom ', 'A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress Small, lower-priced hotels may offer only the most basic guest services and facilities. ', '32-inch LCD TV with cable channels and DVD player\nHandheld and mounted rain shower heads\nWi-Fi access\nSafety deposit box\nMini-bar', 200.00, 'room_1_a.jpg');
+(1, 'King Bedroom ', 'Relax in the comfort of our spacious King Bedroom, featuring a plush king-size bed, stunning city or garden views, and premium amenities for an exceptional stay. Enjoy the convenience of high-speed Wi-Fi and a work desk, along with a spa-inspired bathroom, for a luxurious respite. ', '32-inch LCD TV with cable channels and DVD player\nHandheld and mounted rain shower heads\nWi-Fi access\nSafety deposit box\nMini-bar', 200.00, 'room_1_a.jpg');
+INSERT INTO `room_types` (`id`, `name`, `description`, `amenities`, `price`, `image_url`) VALUES
+(2, 'Queen & Double Bedroom', 'Our spacious Double Queen Bedroom provides the comfort of two plush queen beds, along with modern conveniences like high-speed Wi-Fi and a well-appointed bathroom. Ideal for families or groups, this room ensures a restful and rejuvenating stay.', '40-inch LCD TV with cable channels and DVD player\nHandheld and mounted rain shower heads\nWi-Fi access\nSafety deposit box\nMini-bar', 250.00, 'img_2.jpg');
+
+INSERT INTO `room_types` (`id`, `name`, `description`, `amenities`, `price`, `image_url`) VALUES
+(3, 'Le Voila Suite', 'The Le Voila Suite offers luxurious accommodation with spacious rooms and elegant furnishings. Guests can enjoy stunning views of the city skyline and modern amenities.', 'King-sized bed\nSeparate living area\nJacuzzi tub\nPrivate balcony\nComplimentary breakfast\n24-hour room service', 350.00, 'img_4.jpg');
 
 -- --------------------------------------------------------
 

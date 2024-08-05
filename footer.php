@@ -4,19 +4,19 @@
           <div class="row">
             <div class="col-md-4 pr-md-5">
               <h3>About Us</h3>
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
+              <p style="font-weight:bold">Mohamed A.karim 202207430<br>Ali Hassan 202200428<br>Habib Mansoor 202202669<br>Hussain Ali 202210051<br>Khalil Ebrahim 202110571<br>Ammar Yasser 202202885</p>
             </div>
             <div class="col-md-8 ml-auto">
               <div class="row">
                 <div class="col-md-3">
                   <h3>Navigation</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#" class="whiteTxt">Home</a></li>
-                    <li><a href="#" class="whiteTxt">Rooms</a></li>
-                    <li><a href="#" class="whiteTxt">My Booking</a></li>
-                    <li><a href="#" class="whiteTxt">Gallery</a></li>
-                    <li><a href="#" class="whiteTxt">About Us</a></li>
-                    <li><a href="#" class="whiteTxt">Contact</a></li>
+                    <li><a href="home.php" class="whiteTxt">Home</a></li>
+                    <li><a href="rooms.php" class="whiteTxt">Rooms</a></li>
+                    <li><a href="booking.php" class="whiteTxt">My Booking</a></li>
+                    <li><a href="gallery.php" class="whiteTxt">Gallery</a></li>
+                    <li><a href="about.php" class="whiteTxt">About Us</a></li>
+                    <li><a href="contact.php" class="whiteTxt">Contact</a></li>
                   </ul>
                 </div>
                 <div class="col-md-9 ml-auto">
@@ -44,7 +44,7 @@
                   <form id="subscribeForm" class="form-subscribe" action="#">
                     <div class="form-group d-flex">
                         <input type="email" class="form-control mr-2" id="subscribeEmail" placeholder="Enter your email" required>
-                      <input type="submit" value="Subscribe" class="btn btn-black px-4 text-white">
+                      <input type="submit" value="Subscribe" class="btn btn-primary mt-4">
                      </div>
                   </form>
               </div>

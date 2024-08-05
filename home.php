@@ -103,7 +103,7 @@ if (!isset($_SESSION['username'])) {
           <div class="suite-contents" data-jarallax-element="50">
             <h2 class="suite-title whiteTxt">King Bedroom</h2>
             <div class="suite-excerpt">
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
+              <p>Relax in the comfort of our spacious King Bedroom, featuring a plush king-size bed, stunning city or garden views, and premium amenities for an exceptional stay. Enjoy the convenience of high-speed Wi-Fi and a work desk, along with a spa-inspired bathroom, for a luxurious respite.</p>
               <p><a href="rooms.php#KingRoom" class="readmore whiteTxt">Room Details</a></p>
             </div>
           </div>
@@ -127,7 +127,7 @@ if (!isset($_SESSION['username'])) {
           <div class="suite-contents" data-jarallax-element="50">
             <h2 class="suite-title whiteTxt">Queen &amp; Double Bedroom</h2>
             <div class="suite-excerpt pr-5">
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger</p>
+              <p>Our spacious Double Queen Bedroom provides the comfort of two plush queen beds, along with modern conveniences like high-speed Wi-Fi and a well-appointed bathroom. Ideal for families or groups, this room ensures a restful and rejuvenating stay.</p>
               <p><a href="rooms.php#QueenRoom" class="readmore whiteTxt">Room Details</a></p>
             </div>
           </div>
@@ -153,9 +153,9 @@ if (!isset($_SESSION['username'])) {
                 <img src="images/svg/parking.svg" alt="Image" class="img-fluid">
               </div>
               <h3>Free Self-Parking</h3>
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
+              <p>Enjoy the convenience of complimentary self-parking during your stay. Our on-site lot provides hassle-free access, allowing you to come and go as needed without additional fees.</p>
               <p>
-              <p><a href="#" class="readmore reverse whiteTxt whiteTxt">Read More</a></p>
+              <p><a href="about.php" class="readmore reverse whiteTxt whiteTxt">Read More</a></p>
               </p>
             </div>
           </div>
@@ -166,9 +166,9 @@ if (!isset($_SESSION['username'])) {
                 <img src="images/svg/internet.svg" alt="Image" class="img-fluid">
               </div>
               <h3>High speed Internet access</h3>
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
+              <p>High-speed WiFi is available throughout our hotel, keeping you connected during your stay at no extra charge.</p>
               <p>
-              <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
+              <p><a href="about.php" class="readmore reverse whiteTxt">Read More</a></p>
               </p>
             </div>
           </div>
@@ -178,9 +178,9 @@ if (!isset($_SESSION['username'])) {
                 <img src="images/svg/wifi.svg" alt="Image" class="img-fluid">
               </div>
               <h3>Complimentary WiFi in public areas</h3>
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
+              <p>Complimentary WiFi is accessible in all our public spaces, enabling you to stay connected while enjoying the hotel's common areas.</p>
               <p>
-              <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
+              <p><a href="about.php" class="readmore reverse whiteTxt">Read More</a></p>
               </p>
             </div>
           </div>
@@ -191,9 +191,9 @@ if (!isset($_SESSION['username'])) {
                 <img src="images/svg/elevator.svg" alt="Image" class="img-fluid">
               </div>
               <h3>Elevators</h3>
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
+              <p>Elevators provide easy access to all floors, ensuring a smooth and convenient stay.</p>
               <p>
-              <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
+              <p><a href="about.php" class="readmore reverse whiteTxt">Read More</a></p>
               </p>
             </div>
           </div>
@@ -205,9 +205,9 @@ if (!isset($_SESSION['username'])) {
               </div>
 
               <h3>Meeting rooms</h3>
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
+              <p>Our well-equipped meeting rooms offer flexible spaces for your business or event needs.</p>
               <p>
-              <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
+              <p><a href="about.php" class="readmore reverse whiteTxt">Read More</a></p>
               </p>
             </div>
           </div>
@@ -217,9 +217,9 @@ if (!isset($_SESSION['username'])) {
                 <img src="images/svg/washing-machine.svg" alt="Image" class="img-fluid">
               </div>
               <h3>Laundry and Valet service</h3>
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
+              <p>Convenient laundry and valet services are available to cater to your needs during your stay.</p>
               <p>
-              <p><a href="#" class="readmore reverse whiteTxt">Read More</a></p>
+              <p><a href="about.php" class="readmore reverse whiteTxt">Read More</a></p>
               </p>
             </div>
           </div>

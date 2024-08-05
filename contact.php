@@ -27,7 +27,7 @@
             <div class="site-hero-contents" data-aos="fade-up">
               <h1 class="hero-heading">Contact Us</h1>
               <div class="sub-text w-75">
-                <p>Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
+                <p>don't hesitate to contact our dedicated reservations team. We're available 24/7 to assist with all your travel planning needs.</p>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@
                 <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send" class="">
+                <input type="submit" value="Send" class="btn btn-primary mt-4">
               </div>
             </form>
           </div>
@@ -68,15 +68,16 @@
           <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
             <div class="media-29190">
               <span class="label">Email</span>
-              <p><a href="#">info@DiamondCoast.com</a></p>
+              <p><a href="#">malasfoor04@gmail.com</a></p>
             </div>
             <div class="media-29190">
               <span class="label">Phone</span>
-              <p><a href="#">+30 931 3829 399</a></p>
+              <p><a href="#">+973 37399714</a></p>
             </div>
             <div class="media-29190">
               <span class="label">Address</span>
-              <p>273 South Riverview Rd. New York, NY 10011</p>
+              <p>123 Beachfront Avenue, Aberdeen,
+              Freetown, Sierra Leone</p>
             </div>
             <div class="media-29190">
               <span class="label">Social</span>
@@ -145,7 +146,7 @@
       var subject = document.getElementById('subject').value;
       var message = document.getElementById('message').value;
 
-      var confirmationMessage = "Thank you, " + name + "! We have received your message and will get back to you at " + email + " soon.";
+      var confirmationMessage = "Thank you, " + name + "! We have received your message and will get back to you at " + email + " soon";
 
       // Use the custom alert
       showAlert(confirmationMessage);

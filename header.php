@@ -30,11 +30,6 @@
             <li><a href="home.php">Home</a></li>
             <li class="has-children">
               <a href="rooms.php">Rooms</a>
-              <ul class="dropdown">
-                <li><a href="#">King Bedroom</a></li>
-                <li><a href="#">Queen &amp; Double Bedroom</a></li>
-                <li><a href="#">Le Voila Suite</a></li>
-              </ul>
             </li>
             <li><a href="myBooking.php">My Booking</a></li>
             <li><a href="gallery.php">Gallery</a></li>

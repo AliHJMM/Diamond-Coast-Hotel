@@ -39,7 +39,7 @@
             <h2 class="display-4 mb-5 whiteTxt">Our Story</h2>
           </div>
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-            <p>Founded in 2020, Diamond Coast Hotel has been committed to providing world-class hospitality and unforgettable experiences to our guests. Nestled in the heart of New York, our hotel boasts luxurious accommodations, top-notch amenities, and exceptional service.</p>
+            <p>Welcome to the Diamond Coast, Freetown's newest and most luxurious hotel. Established in 2024, the Diamond Coast offers travelers a sophisticated retreat in the heart of this vibrant city. Our contemporary design takes inspiration from the sparkling waters and pristine beaches just minutes away. Guests can look forward to spacious accommodations, world-class amenities, and stunning panoramic views of the coast and nearby mountains. Whether visiting for business or leisure, our dedicated team is committed to ensuring your stay is comfortable, productive, and truly exceptional. We invite you to discover the Diamond Coast - a brilliant gem along the shores of Freetown.</p>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <img src="images/slider_2.jpg" alt="Hotel Interior" class="img-fluid">

@@ -7,6 +7,8 @@ if (!isset($_SESSION['username'])) {
 
 require_once 'config.php';
 $conn = getDBConnection();
+
+// Fetch all room types from database
 $sql = "SELECT * FROM room_types";
 $result = $conn->query($sql);
 
@@ -17,18 +19,37 @@ if ($result->num_rows > 0) {
   }
 }
 $conn->close();
+
+// Function to filter rooms based on search term
+function filterRooms($rooms, $searchTerm) {
+  $filteredRooms = [];
+  foreach ($rooms as $room) {
+    // Check if room name or any amenity contains the search term
+    if (stripos($room['name'], $searchTerm) !== false ||
+        stripos($room['amenities'], $searchTerm) !== false) {
+      $filteredRooms[] = $room;
+    }
+  }
+  return $filteredRooms;
+}
+
+// Handle search input
+$searchTerm = isset($_GET['s']) ? $_GET['s'] : '';
+
+// Filter rooms based on search term
+if (!empty($searchTerm)) {
+  $rooms = filterRooms($rooms, $searchTerm);
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php include 'links.php'; ?>
   <title>Diamond Coast Hotel</title>
 </head>
-
 <body>
 
   <?php include 'header.php'; ?>
@@ -46,16 +67,11 @@ $conn->close();
         </div>
       </div>
     </div>
-    <div class="row justify-content-center text-center site-section pt-0">
-      <div class="col-md-6">
-        <h2 class="display-4 whiteTxt" data-aos="fade-up">Enjoy Your Stay</h2>
-        <p data-aos="fade-up" data-aos-delay="100">A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress </p>
-      </div>
-    </div>
-
-
 
     <div class="container-fluid px-md-0">
+      <?php if (!empty($searchTerm)): ?>
+      <?php endif; ?>
+
       <?php foreach ($rooms as $room) : ?>
         <div class="row no-gutters align-items-stretch room-animate site-section">
           <div class="col-md-7 <?php echo ($room['id'] % 2 == 0) ? 'order-md-2' : ''; ?> img-wrap" data-jarallax-element="-100">
@@ -71,7 +87,7 @@ $conn->close();
                   <div class="row mt-5">
                     <div class="col-12">
                       <h3 class="mb-4">Amenities</h3>
-                      <ul class="list-unstyled ul-check ">
+                      <ul class="list-unstyled ul-check">
                         <?php
                         // Split amenities by newline and trim each line
                         $amenities = explode("\n", $room['amenities']);
@@ -89,15 +105,11 @@ $conn->close();
         </div>
       <?php endforeach; ?>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <?php include 'specialRequest.php'; ?>
-  </main>
-  <?php include 'footer.php'; ?>
-  </div>
-  <?php include 'searchWrapper.php'; ?>
-</body>
 
+  </main>
+
+  <?php include 'footer.php'; ?>
+  <?php include 'searchWrapper.php'; ?>
+
+</body>
 </html>

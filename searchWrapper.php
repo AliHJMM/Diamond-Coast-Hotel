@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row justify-content-center align-items-center text-center">
           <div class="col-md-12">
-            <form action="#">
+            <form action="rooms.php" method="GET">
               <input type="search" name="s" id="s" placeholder="Type a keyword and hit enter..."  autocomplete="false">
             </form>    
           </div>
