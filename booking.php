@@ -88,7 +88,7 @@ if (!$room) {
                 </div>
                 <div class="site-nav-ul-wrap text-center d-none d-lg-block">
                     <ul class="site-nav-ul js-clone-nav">
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="home.php">Home</a></li>
                         <li class="has-children"><a href="rooms.php">Rooms</a></li>
                         <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="about.php">About Us</a></li>
@@ -151,6 +151,25 @@ if (!$room) {
                                         <label for="total_price">Total Price ($)</label>
                                         <input type="text" name="total_price" id="total_price" class="form-control" readonly>
                                     </div>
+
+                                    <!-- Payment Information Section -->
+                                    <div class="form-group">
+                                        <label for="card_name">Card holder Name</label>
+                                        <input type="text" name="card_name" id="card_name" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="card_number">Card Number</label>
+                                        <input type="text" name="card_number" id="card_number" class="form-control" required pattern="\d{16}" title="Please enter a valid 16-digit card number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="card_expiry">Expiration Date</label>
+                                        <input type="month" name="card_expiry" id="card_expiry" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="card_cvv">CVV</label>
+                                        <input type="text" name="card_cvv" id="card_cvv" class="form-control" required pattern="\d{3}" title="Please enter a valid 3-digit CVV">
+                                    </div>
+
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary">Book Now</button>
                                     </div>
@@ -209,7 +228,7 @@ if (!$room) {
             }
         }
     });
-</script>
+    </script>
 
 </body>
 </html>

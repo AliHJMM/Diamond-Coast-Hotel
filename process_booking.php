@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 session_start(); // Start the session
 if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
