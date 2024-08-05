@@ -15,9 +15,9 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
     <?php include 'links.php'; ?>
     <title>Weather Information</title>
     <style>
-        .untree_co--site-hero {
+    .untree_co--site-hero {
     position: relative;
-    color: white;
+    color: black !important; /* Force text color to be black */
     background-size: cover;
     background-position: center;
     height: 300px; /* Adjust as needed */
@@ -29,17 +29,20 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: black !important; /* Force text color to be black */
 }
 
 .hero-heading {
     font-size: 2.5rem;
     margin: 0;
+    color: black !important; /* Ensure the heading text is black */
 }
 
 .sub-text p {
     font-size: 1.25rem;
+    color: black !important; /* Ensure paragraph text is black */
 }
+
 
     </style>
 </head>
@@ -50,10 +53,10 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
 
     <main class="untree_co--site-main">
 
-    <div class="untree_co--site-hero" style="background-image: url('images/Weather.webp');">
+    <div class="untree_co--site-hero" style="background-image: url('images/Weather.png');">
     <div class="hero-contents">
         <h1 class="hero-heading">Weather Information</h1>
-        <div class="sub-text">
+        <div class="sub-text ">
             <p>Stay updated with the latest weather information for Freetown. Find out current conditions and forecasts to plan your day!</p>
         </div>
     </div>

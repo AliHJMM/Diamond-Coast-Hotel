@@ -28,7 +28,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
 
   <main class="untree_co--site-main">
 
-    <div class="untree_co--site-hero inner-page bg-light" style="background-image: url('images/contact2.jpg'); background-size: cover; background-position: center;">
+    <div class="untree_co--site-hero inner-page bg-light" style="background-image: url('images/Contact_us.jpg'); background-size: cover; background-position: center;">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-9">
