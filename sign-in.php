@@ -45,15 +45,13 @@ $error = isset($_SESSION['error']) ? $_SESSION['error'] : '';
 // Clear session error
 unset($_SESSION['error']);
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-In Diamond Coast Hotel</title>
-  <link rel="stylesheet" href="css/vendor/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="DiamondCoastHotelLogo.png">
+  <?php include 'links.php'; ?>
 </head>
 <body>
 

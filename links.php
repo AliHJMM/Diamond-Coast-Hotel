@@ -1,5 +1,6 @@
 <!-- links.php -->
 <!-- Stylesheets -->
+<link rel="shortcut icon" href="Images/DiamondCoastHotelLogo.png">
 <link rel="stylesheet" href="css/vendor/icomoon/style.css">
 <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
 <link rel="stylesheet" href="css/vendor/aos.css">

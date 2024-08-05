@@ -206,7 +206,6 @@
 
         <?php include 'specialRequest.php'; ?>
     </div>
-
     <?php include 'footer.php'; ?>
     <?php include 'searchWrapper.php'; ?>
 </body>

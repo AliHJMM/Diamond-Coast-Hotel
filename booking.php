@@ -23,14 +23,12 @@ if (!$room) {
     exit();
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="DiamondCoastHotelLogo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include 'links.php'; ?>
-
     <title>Diamond Coast Hotel - Booking</title>
     <style>
         .room-details-container {

@@ -97,15 +97,13 @@ unset($_SESSION['error']);
 unset($_SESSION['username']);
 unset($_SESSION['email']);
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-Up Diamond Coast Hotel</title>
-  <link rel="stylesheet" href="css/vendor/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="DiamondCoastHotelLogo.png">
+  <?php include 'links.php'; ?>
 </head>
 <body>
 
@@ -158,9 +156,6 @@ unset($_SESSION['email']);
     </div>
   </div>
 </div>
-
-<script src="js/vendor/jquery-3.4.1.min.js"></script>
-<script src="js/vendor/bootstrap.bundle.min.js"></script>
 <script>
   function togglePasswords() {
     var passwordField = document.getElementById('password');

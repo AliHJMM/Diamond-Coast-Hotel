@@ -1,20 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="DiamondCoastHotelLogo.png">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php include 'links.php'; ?>
-
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-
-
-
   <title>Diamond Coast Hotel</title>
-
   <style>
     .untree_co--site-hero * {
       color: white !important;
@@ -121,13 +111,10 @@
           </div>
         </div>
       </div>
-
       <?php include 'specialRequest.php'; ?>
     </main>
     <?php include 'footer.php'; ?>
   </div>
-  <!-- Search -->
   <?php include 'searchWrapper.php'; ?>
 </body>
-
 </html>
