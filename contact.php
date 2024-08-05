@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php include 'links.php'; ?>
 
   <title>Diamond Coast Hotel</title>
@@ -16,151 +16,87 @@
 
 <body>
 
-  <div id="untree_co--overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
+  <?php include 'header.php'; ?>
 
-  <nav class="untree_co--site-mobile-menu">
-    <div class="close-wrap d-flex">
-      <a href="#" class="d-flex ml-auto js-menu-toggle">
-        <span class="close-label">Close</span>
-        <div class="close-times">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
+  <main class="untree_co--site-main">
+
+    <div class="untree_co--site-hero inner-page bg-light" style="background-image: url('images/contact2.jpg'); background-size: cover; background-position: center;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-9">
+            <div class="site-hero-contents" data-aos="fade-up">
+              <h1 class="hero-heading">Contact Us</h1>
+              <div class="sub-text w-75">
+                <p>Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
+      </div>
     </div>
-    <div class="site-mobile-inner"></div>
-  </nav>
 
-  <div class="untree_co--site-wrap">
+    <div class="untree_co--site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" data-aos="fade-up">
+            <h2 class="display-4 mb-5">Fill the form</h2>
+          </div>
+          <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+            <form id="contactForm" action="#">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email *</label>
+                <input type="text" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject">
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send" class="">
+              </div>
+            </form>
+          </div>
 
-    <nav class="untree_co--site-nav dark js-sticky-nav">
-      <div class="container d-flex align-items-center">
-        <div class="logo-wrap">
-          <a href="home.php" class="untree_co--site-logo">Diamond Coast Hotel</a>
-        </div>
-        <div class="site-nav-ul-wrap text-center d-none d-lg-block">
-          <ul class="site-nav-ul js-clone-nav">
-            <li><a href="home.php">Home</a></li>
-            <li class="has-children">
-              <a href="rooms.php">Rooms</a>
-              <ul class="dropdown">
-                <li><a href="#">King Bedroom</a></li>
-                <li><a href="#">Queen &amp; Double Bedroom</a></li>
-                <li><a href="#">Le Voila Suite</a></li>
+          <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+            <div class="media-29190">
+              <span class="label">Email</span>
+              <p><a href="#">info@DiamondCoast.com</a></p>
+            </div>
+            <div class="media-29190">
+              <span class="label">Phone</span>
+              <p><a href="#">+30 931 3829 399</a></p>
+            </div>
+            <div class="media-29190">
+              <span class="label">Address</span>
+              <p>273 South Riverview Rd. New York, NY 10011</p>
+            </div>
+            <div class="media-29190">
+              <span class="label">Social</span>
+              <ul class="icons-top icons-dark">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-tripadvisor"></span></a></li>
               </ul>
-            </li>
-            <li><a href="myBooking.php">My Booking</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
-            <li><a href="Weather.php">Weather</a></li>
-            <li><a href="about.php">About Us</a></li>
-          </ul>
-        </div>
-        <div class="icons-wrap text-md-right">
-          <ul class="icons-top d-none d-lg-block">
-            <li class="mr-4">
-              <a href="#" class="js-search-toggle"><span class="fa fa-search"></span></a>
-            </li>
-            <li>
-              <a href="#" id="darkModeToggle"><i class="fa-solid fa-moon" id="icon"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-user"></i></a>
-            </li>
-            <li>
-              <a href="log-out.php"><i class="fa-solid fa-right-from-bracket"></i></a>
-            </li>
-          </ul>
-          <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-            <span></span>
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <main class="untree_co--site-main">
-
-      <div class="untree_co--site-hero inner-page bg-light" style="background-image: url('images/contact2.jpg'); background-size: cover; background-position: center;">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-9">
-              <div class="site-hero-contents" data-aos="fade-up">
-                <h1 class="hero-heading">Contact Us</h1>
-                <div class="sub-text w-75">
-                  <p>Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-        
-      <div class="untree_co--site-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12" data-aos="fade-up">
-              <h2 class="display-4 mb-5">Fill the form</h2>
-            </div>
-            <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-              <form id="contactForm" action="#">
-                <div class="form-group">
-                  <label for="name">Your Name *</label>
-                  <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Your Email *</label>
-                  <input type="text" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" class="form-control" id="subject">
-                </div>
-                <div class="form-group">
-                  <label for="message">Message *</label>
-                  <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Send" class="">
-                </div>
-              </form>
-            </div>
+    </div>
 
-            <div class="col-md-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
-              <div class="media-29190">
-                <span class="label">Email</span>
-                <p><a href="#">info@DiamondCoast.com</a></p>
-              </div>
-              <div class="media-29190">
-                <span class="label">Phone</span>
-                <p><a href="#">+30 931 3829 399</a></p>
-              </div>
-              <div class="media-29190">
-                <span class="label">Address</span>
-                <p>273 South Riverview Rd. New York, NY 10011</p>
-              </div>
-              <div class="media-29190">
-                <span class="label">Social</span>
-                <ul class="icons-top icons-dark">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                  <li><a href="#"><span class="icon-tripadvisor"></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <?php include 'specialRequest.php'; ?>
-    </main>
-    <?php include 'footer.php'; ?>
+    <?php include 'specialRequest.php'; ?>
+  </main>
+  <?php include 'footer.php'; ?>
   </div>
-  
+
   <!-- Search -->
   <?php include 'searchWrapper.php'; ?>
 
@@ -220,4 +156,5 @@
   </script>
 
 </body>
+
 </html>

@@ -776,8 +776,8 @@ a, a:hover {
 .icons-top.icons-dark li a {
   color: #fff;
   background: #000;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   opacity: 1;
 }
 
@@ -1988,3 +1988,4 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   left: 50%;
   transform: translate(-50%, -50%); /* Centers the icon */
 }
+
