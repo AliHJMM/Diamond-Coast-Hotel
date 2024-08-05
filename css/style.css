@@ -1653,21 +1653,6 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   box-shadow: none;
 }
 
-.form-control, .btn {
-  height: 45px;
-  border-radius: 0;
-}
-
-.btn {
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.btn.btn-black {
-  background: #000;
-  color: #fff;
-}
-
 .form-control {
   background: none;
   border-radius: 0;

@@ -1482,18 +1482,7 @@ footer {
 }
 
 
-.form-control, .btn {
-	height: 45px;
-	border-radius: 0;
-}
-.btn {
-	font-size: 16px;
-	font-weight: 700;
-	&.btn-black {
-		background: $black;
-		color: $white;
-	}
-}
+
 .form-control {
 	background: none;
 	border-radius: 0;
