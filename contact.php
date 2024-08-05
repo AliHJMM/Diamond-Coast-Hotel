@@ -124,7 +124,7 @@
                   <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Send" class="btn btn-black px-5 text-white">
+                  <input type="submit" value="Send" class="">
                 </div>
               </form>
             </div>

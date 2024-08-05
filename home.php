@@ -313,7 +313,6 @@ if (!isset($_SESSION['username'])) {
 
   <!-- Search -->
   <?php include 'searchWrapper.php'; ?>
-  <script></script>
 </body>
 
 </html>

@@ -5,42 +5,85 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.untree_co--site-nav');
   const alertMessage = document.getElementById('alertMessage');
 
+  // Load the theme from the cookie when the page loads
+  const theme = getCookie('theme');
+  if (theme === 'dark') {
+    applyDarkMode();
+  } else {
+    applyLightMode();
+  }
+
   toggle.addEventListener('click', function() {
     this.classList.toggle('fa-moon');
     this.classList.toggle('fa-sun');
 
     if (this.classList.contains('fa-sun')) {
       // Light mode
-      body.style.backgroundColor = 'white';
-      body.style.color = '#3e3e42';
-      if (featuredRoomsSection) {
-        featuredRoomsSection.style.backgroundColor = 'white';
-        featuredRoomsSection.style.color = '#3e3e42';
-      }
-      changeTextColor('#3e3e42');
-      changeColorToBlack(); // Set specific elements to black
-      setArrowIconsColor('black'); // Set arrow icons to black in light mode
-      setSliderCounterTextColor('#3e3e42'); // Set slider-counter text to default in light mode
-      if (alertMessage) {
-        alertMessage.style.color = '#3e3e42'; // Set alertMessage text to default color in light mode
-      }
+      applyLightMode();
+      setCookie('theme', 'light', 7); // Store the choice in a cookie
     } else {
       // Dark mode
-      body.style.backgroundColor = '#28283c';
-      body.style.color = 'white';
-      if (featuredRoomsSection) {
-        featuredRoomsSection.style.backgroundColor = '#28283c';
-        featuredRoomsSection.style.color = 'white';
-      }
-      changeTextColor('white');
-      changeColorToWhite(); // Set specific elements to white in dark mode
-      setArrowIconsColor('black'); // Set arrow icons to black in dark mode
-      setSliderCounterTextColor('black'); // Set slider-counter text to black in dark mode
-      if (alertMessage) {
-        alertMessage.style.color = 'black'; // Set alertMessage text to black in dark mode
-      }
+      applyDarkMode();
+      setCookie('theme', 'dark', 7); // Store the choice in a cookie
     }
   });
+
+  // Function to set a cookie
+  function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  // Function to get a cookie value by name
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  // Function to apply light mode
+  function applyLightMode() {
+    body.style.backgroundColor = 'white';
+    body.style.color = '#3e3e42';
+    if (featuredRoomsSection) {
+      featuredRoomsSection.style.backgroundColor = 'white';
+      featuredRoomsSection.style.color = '#3e3e42';
+    }
+    changeTextColor('#3e3e42');
+    changeColorToBlack(); // Set specific elements to black
+    setArrowIconsColor('black'); // Set arrow icons to black in light mode
+    setSliderCounterTextColor('#3e3e42'); // Set slider-counter text to default in light mode
+    if (alertMessage) {
+      alertMessage.style.color = '#3e3e42'; // Set alertMessage text to default color in light mode
+    }
+  }
+
+  // Function to apply dark mode
+  function applyDarkMode() {
+    body.style.backgroundColor = '#28283c';
+    body.style.color = 'white';
+    if (featuredRoomsSection) {
+      featuredRoomsSection.style.backgroundColor = '#28283c';
+      featuredRoomsSection.style.color = 'white';
+    }
+    changeTextColor('white');
+    changeColorToWhite(); // Set specific elements to white in dark mode
+    setArrowIconsColor('black'); // Set arrow icons to black in dark mode
+    setSliderCounterTextColor('black'); // Set slider-counter text to black in dark mode
+    if (alertMessage) {
+      alertMessage.style.color = 'black'; // Set alertMessage text to black in dark mode
+    }
+  }
 
   // Function to change the color of all p, h3 elements
   function changeTextColor(color) {

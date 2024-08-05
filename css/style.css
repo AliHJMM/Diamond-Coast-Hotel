@@ -1574,49 +1574,6 @@ span[data-jarallax-element] {
   background: #ff896b;
 }
 
-.thumbnail {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  -webkit-transform: translateY(50%) translateX(-50%);
-  -ms-transform: translateY(50%) translateX(-50%);
-  transform: translateY(50%) translateX(-50%);
-  z-index: 99;
-}
-
-.thumbnail li {
-  display: inline-block;
-}
-
-.thumbnail li a {
-  display: block;
-  margin: 4px;
-}
-
-.thumbnail li a img {
-  width: 50px;
-  border-radius: 50%;
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.thumbnail li.active a img {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
 footer {
   padding: 7rem 0;
   font-size: 15px;
@@ -2031,26 +1988,3 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   left: 50%;
   transform: translate(-50%, -50%); /* Centers the icon */
 }
-
-.dark-mode {
-  background-color: #292524;
-  color: white;
-}
-
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4,
-.dark-mode h5,
-.dark-mode h6,
-.dark-mode p,
-.dark-mode a,
-.dark-mode span,
-.dark-mode .untree_co--site-section {
-  color: white !important;
-}
-
-.dark-mode .featured-rooms {
-  background-color: #292524;
-}
-
