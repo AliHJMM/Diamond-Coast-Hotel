@@ -84,7 +84,7 @@ try {
                                     <?php foreach ($bookings as $booking): ?>
                                         <div class="booking-item" data-aos="fade-up">
                                             <div class="booking-details">
-                                                <h4><?php echo htmlspecialchars($booking['room_name']); ?> - Room Number:  <?php echo htmlspecialchars($booking['room_number']); ?></h4>
+                                                <h4 class="whiteTxt"><?php echo htmlspecialchars($booking['room_name']); ?> - Room Number:  <?php echo htmlspecialchars($booking['room_number']); ?></h4>
                                                 <p><?php echo htmlspecialchars($booking['description']); ?></p>
                                                 <p><strong>Check-in:</strong> <?php echo htmlspecialchars($booking['start_date']); ?></p>
                                                 <p><strong>Check-out:</strong> <?php echo htmlspecialchars($booking['end_date']); ?></p>
@@ -106,7 +106,7 @@ try {
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
-                                                    <div class="modal-body">
+                                                    <div class="modal-body" style="color: black !important;">
                                                         Are you sure you want to cancel your booking for <strong><?php echo htmlspecialchars($booking['room_name']); ?></strong>? Please note that the money will not be refunded.
                                                     </div>
                                                     <div class="modal-footer">
