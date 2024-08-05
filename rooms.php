@@ -66,7 +66,7 @@ $conn->close();
               <div class="col-md-8 py-5">
                 <h3 class="display-4 heading"><?php echo htmlspecialchars($room['name']); ?></h3>
                 <div class="room-exerpt">
-                  <div class="room-price mb-4 whiteTxt">$<?php echo htmlspecialchars($room['price']); ?><span class="per ">/night</span></div>
+                  <div class="room-price mb-4 whiteTxt">$<?php echo htmlspecialchars($room['price']); ?><span class="per whiteTxt ">/night</span></div>
                   <p><?php echo htmlspecialchars($room['description']); ?></p>
                   <div class="row mt-5">
                     <div class="col-12">
