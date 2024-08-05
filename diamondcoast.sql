@@ -147,7 +147,8 @@ ALTER TABLE `room_types`
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`);
+  ADD PRIMARY KEY (`user_id`),
+  ADD UNIQUE KEY `username` (`username`);  -- Add unique constraint for username
 
 --
 -- AUTO_INCREMENT for dumped tables
