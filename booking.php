@@ -29,13 +29,8 @@ if (!$room) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="DiamondCoastHotelLogo.png">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <?php include 'links.php'; ?>
+
     <title>Diamond Coast Hotel - Booking</title>
     <style>
         .room-details-container {
@@ -174,24 +169,6 @@ if (!$room) {
     </div>
 
     <?php include 'searchWrapper.php'; ?>
-
-    <script src="js/vendor/jquery-3.3.1.min.js"></script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/owl.carousel.min.js"></script>
-    <script src="js/vendor/jarallax.min.js"></script>
-    <script src="js/vendor/jarallax-element.min.js"></script>
-    <script src="js/vendor/ofi.min.js"></script>
-    <script src="js/vendor/aos.js"></script>
-    <script src="js/vendor/jquery.lettering.js"></script>
-    <script src="js/vendor/jquery.sticky.js"></script>
-    <script src="js/vendor/TweenMax.min.js"></script>
-    <script src="js/vendor/ScrollMagic.min.js"></script>
-    <script src="js/vendor/scrollmagic.animation.gsap.min.js"></script>
-    <script src="js/vendor/debug.addIndicators.min.js"></script>
-    <script src="js/main.js" defer></script>
-  <script src="js/darkmode.js" defer></script>
-
     <script>
     document.addEventListener('DOMContentLoaded', function () {
         var startDateInput = document.getElementById("start_date");
