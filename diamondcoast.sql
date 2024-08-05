@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2024 at 10:30 PM
+-- Generation Time: Aug 05, 2024 at 02:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -28,16 +28,25 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `bookings` (
-  `book_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `room_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
   `start_date` date NOT NULL,
   `end_date` date NOT NULL,
-  `status` varchar(50) NOT NULL,
-  `total_price` decimal(10,2) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `total_price` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `bookings`
+--
+
+INSERT INTO `bookings` (`id`, `room_id`, `start_date`, `end_date`, `total_price`, `user_id`) VALUES
+(7, 1, '2024-08-22', '2024-08-30', 1600, 15),
+(8, 1, '2024-08-07', '2024-08-08', 200, 15),
+(9, 2, '2024-08-22', '2024-08-30', 1600, 15),
+(10, 1, '2024-08-04', '2024-08-06', 400, 15),
+(11, 3, '2024-08-22', '2024-08-23', 200, 15),
+(12, 2, '2024-09-05', '2024-09-19', 2800, 15);
 
 -- --------------------------------------------------------
 
@@ -46,13 +55,8 @@ CREATE TABLE `bookings` (
 --
 
 CREATE TABLE `rooms` (
-  `room_id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `description` text DEFAULT NULL,
-  `price` decimal(10,2) NOT NULL,
-  `amenities` varchar(255) DEFAULT NULL,
-  `image_url` varchar(255) DEFAULT NULL,
-  `room_type` varchar(50) DEFAULT NULL,
+  `id` int(11) NOT NULL,
+  `room_type_id` int(11) NOT NULL,
   `room_number` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -60,10 +64,32 @@ CREATE TABLE `rooms` (
 -- Dumping data for table `rooms`
 --
 
-INSERT INTO `rooms` (`room_id`, `name`, `description`, `price`, `amenities`, `image_url`, `room_type`, `room_number`) VALUES
-(1, 'King Bedroom', 'A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress\n\nSmall, lower-priced hotels may offer only the most basic guest services and facilities. ', 200.00, '32-inch LCD TV with cable channels and DVD player\nHandheld and mounted rain shower heads\nWi-Fi access\nSafety deposit box\nMini-bar', 'room_1_a.jpg', NULL, '293'),
-(2, 'Queen & Double Bedroom', 'A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress\r\n\r\nSmall, lower-priced hotels may offer only the most basic guest services and facilities. ', 273.00, '32-inch LCD TV with cable channels and DVD player\nHandheld and mounted rain shower heads\nWi-Fi access\nSafety deposit box\nMini-bar', 'slider_2.jpg', NULL, '943'),
-(3, 'habib', 'habib', 1.00, 'hh\r\naa', 'hotel.gif', NULL, '');
+INSERT INTO `rooms` (`id`, `room_type_id`, `room_number`) VALUES
+(1, 1, '1'),
+(2, 1, '2'),
+(3, 1, '3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `room_types`
+--
+
+CREATE TABLE `room_types` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `description` text NOT NULL,
+  `amenities` text NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `image_url` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `room_types`
+--
+
+INSERT INTO `room_types` (`id`, `name`, `description`, `amenities`, `price`, `image_url`) VALUES
+(1, 'King Bedroom ', 'A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress Small, lower-priced hotels may offer only the most basic guest services and facilities. ', '32-inch LCD TV with cable channels and DVD player\nHandheld and mounted rain shower heads\nWi-Fi access\nSafety deposit box\nMini-bar', 200.00, 'room_1_a.jpg');
 
 -- --------------------------------------------------------
 
@@ -99,7 +125,7 @@ INSERT INTO `users` (`user_id`, `username`, `password_hash`, `salt`, `email`, `c
 -- Indexes for table `bookings`
 --
 ALTER TABLE `bookings`
-  ADD PRIMARY KEY (`book_id`),
+  ADD PRIMARY KEY (`id`),
   ADD KEY `room_id` (`room_id`),
   ADD KEY `user_id` (`user_id`);
 
@@ -107,7 +133,15 @@ ALTER TABLE `bookings`
 -- Indexes for table `rooms`
 --
 ALTER TABLE `rooms`
-  ADD PRIMARY KEY (`room_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `room_number` (`room_number`),
+  ADD KEY `room_type_id` (`room_type_id`);
+
+--
+-- Indexes for table `room_types`
+--
+ALTER TABLE `room_types`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -123,13 +157,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `rooms`
 --
 ALTER TABLE `rooms`
-  MODIFY `room_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `room_types`
+--
+ALTER TABLE `room_types`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -145,8 +185,14 @@ ALTER TABLE `users`
 -- Constraints for table `bookings`
 --
 ALTER TABLE `bookings`
-  ADD CONSTRAINT `bookings_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`),
+  ADD CONSTRAINT `bookings_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`),
   ADD CONSTRAINT `bookings_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+--
+-- Constraints for table `rooms`
+--
+ALTER TABLE `rooms`
+  ADD CONSTRAINT `rooms_ibfk_1` FOREIGN KEY (`room_type_id`) REFERENCES `room_types` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
