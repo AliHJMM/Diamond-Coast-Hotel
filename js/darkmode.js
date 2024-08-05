@@ -6,7 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const alertMessage = document.getElementById('alertMessage');
 
   // Load the theme from the cookie when the page loads
-  const theme = getCookie('theme');
+  function getCookieValue(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
+}
+  const theme = getCookieValue('theme');
   if (theme === 'dark') {
     applyDarkMode();
   } else {
@@ -28,28 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Function to set a cookie
-  function setCookie(name, value, days) {
-    let expires = "";
-    if (days) {
-      const date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-  }
 
-  // Function to get a cookie value by name
-  function getCookie(name) {
-    const nameEQ = name + "=";
-    const ca = document.cookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-    }
-    return null;
-  }
 
   // Function to apply light mode
   function applyLightMode() {

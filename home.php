@@ -2,9 +2,8 @@
 session_start(); // Start the session
 
 if (!isset($_SESSION['username'])) {
-  echo $_SESSION['username'];
-  //header("Location: sign-in.php");
-  //exit();
+  header("Location: sign-in.php");
+  exit();
 }
 
 ?>
