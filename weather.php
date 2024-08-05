@@ -16,34 +16,32 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
     <title>Weather Information</title>
     <style>
     .untree_co--site-hero {
-    position: relative;
-    color: black !important; /* Force text color to be black */
-    background-size: cover;
-    background-position: center;
-    height: 300px; /* Adjust as needed */
-}
+        position: relative;
+        color: black !important; /* Force text color to be black */
+        background-size: cover;
+        background-position: center;
+        height: 300px; /* Adjust as needed */
+    }
 
-.untree_co--site-hero .hero-contents {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: black !important; /* Force text color to be black */
-}
+    .untree_co--site-hero .hero-contents {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: black !important; /* Force text color to be black */
+    }
 
-.hero-heading {
-    font-size: 2.5rem;
-    margin: 0;
-    color: black !important; /* Ensure the heading text is black */
-}
+    .hero-heading {
+        font-size: 2.5rem;
+        margin: 0;
+        color: black !important; /* Ensure the heading text is black */
+    }
 
-.sub-text p {
-    font-size: 1.25rem;
-    color: black !important; /* Ensure paragraph text is black */
-}
-
-
+    .sub-text p {
+        font-size: 1.25rem;
+        color: black !important; /* Ensure paragraph text is black */
+    }
     </style>
 </head>
 
@@ -53,15 +51,14 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
 
     <main class="untree_co--site-main">
 
-    <div class="untree_co--site-hero" style="background-image: url('images/Weather.png');">
-    <div class="hero-contents">
-        <h1 class="hero-heading">Weather Information</h1>
-        <div class="sub-text ">
-            <p>Stay updated with the latest weather information for Freetown. Find out current conditions and forecasts to plan your day!</p>
+        <div class="untree_co--site-hero" style="background-image: url('images/Weather.png');">
+            <div class="hero-contents">
+                <h1 class="hero-heading">Weather Information</h1>
+                <div class="sub-text ">
+                    <p>Stay updated with the latest weather information for Freetown. Find out current conditions and forecasts to plan your day!</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
 
         <div class="untree_co--site-section">
             <div class="container">
@@ -125,10 +122,10 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
                                 }
                             }
 
-                            $days = ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu'];
+                            $days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
                             $displayedDays = 0;
                             foreach ($dailyForecast as $day => $data) {
-                                if ($displayedDays < 6) {
+                                if ($displayedDays < 7) {
                                     echo "<div class='col text-center mb-3'>";
                                     echo "<p class=''>" . $days[$displayedDays] . "</p>";
                                     echo "<i class='fa-solid " . getWeatherIcon($data['weather'][0]['icon']) . " ' style='font-size: 1rem;'></i>";
@@ -139,7 +136,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
                             }
 
                             // Add "Data not available" for any missing day
-                            for ($i = $displayedDays; $i < 6; $i++) {
+                            for ($i = $displayedDays; $i < 7; $i++) {
                                 echo "<div class='col text-center mb-3'>";
                                 echo "<p class=''>" . $days[$i] . "</p>";
                                 echo "<p class=''>Data not available</p>";
