@@ -47,7 +47,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-up">
-            <h2 class="display-4 mb-5">Fill the form</h2>
+            <h2 class="display-4 mb-5 whiteTxt">Fill the form</h2>
           </div>
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
             <form id="contactForm" action="#">
