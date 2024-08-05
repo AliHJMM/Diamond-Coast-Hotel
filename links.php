@@ -28,3 +28,4 @@
 <script src="js/vendor/debug.addIndicators.min.js" defer></script>
 <script src="js/main.js" defer></script>
 <script src="js/darkmode.js" defer></script>
+<script src="js/sun.js" defer></script>
