@@ -1,3 +1,11 @@
+<?php
+session_start(); // Start the session
+if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
+    header("Location: sign-in.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

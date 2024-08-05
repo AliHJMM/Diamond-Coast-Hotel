@@ -1,5 +1,13 @@
 <?php
 session_start();
+
+session_start(); // Start the session
+if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
+    header("Location: sign-in.php");
+    exit();
+}
+
+
 require_once 'config.php';
 
 $message1 = '';
