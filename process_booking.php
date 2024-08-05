@@ -144,7 +144,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main class="untree_co--site-main">
       <div class="container text-center" style="height: 80vh; display: flex; align-items: center; justify-content: center;">
         <div>
-          <h1 class="display-4"><?php echo $message1?></h1>
+          <h1 class="display-4 whiteTxt"><?php echo $message1?></h1>
           <p class="lead"><?php echo $message2?></p>
           <a href="home.php" class="btn btn-primary mt-4">Home</a>
         </div>
