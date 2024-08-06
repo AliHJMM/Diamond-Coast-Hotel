@@ -28,7 +28,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
 
   <main class="untree_co--site-main">
 
-    <div class="untree_co--site-hero inner-page bg-light" style="background-image: url('images/Contact_us.jpg'); background-size: cover; background-position: center;">
+    <div class="untree_co--site-hero inner-page bg-light" style="background-image: url('images/Contact_us.png'); background-size: cover; background-position: center;">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-9">
@@ -90,10 +90,10 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
             <div class="media-29190">
               <span class="label">Social</span>
               <ul class="icons-top icons-dark">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-tripadvisor"></span></a></li>
+                <li><a href="https://www.facebook.com/leomessi/"><span class="icon-facebook"></span></a></li>
+                <li><a href="https://x.com/eqrb_10"><span class="icon-twitter"></span></a></li>
+                <li><a href="https://www.instagram.com/leomessi/"><span class="icon-instagram"></span></a></li>
+                <li><a href="https://www.tripadvisor.com/Attraction_Review-g34438-d27734764-Reviews-The_Messi_Experience-Miami_Florida.html"><span class="icon-tripadvisor"></span></a></li>
               </ul>
             </div>
           </div>

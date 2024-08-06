@@ -27,7 +27,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
   <main class="untree_co--site-main">
 
 
-    <div class="untree_co--site-hero inner-page" style="background-image: url('images/gallery.png')">
+    <div class="untree_co--site-hero inner-page" style="background-image: url('images/Gallery.png')">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center">
@@ -55,7 +55,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
               <div class="slide-thumb bg-image" style="background-image: url('images/G8.jpg')"></div>
               <div class="slide-thumb bg-image" style="background-image: url('images/G9.jpg')"></div>
               <div class="slide-thumb bg-image" style="background-image: url('images/G10.jpg')"></div>
-              <div class="slide-thumb bg-image" style="background-image: url('images/G11.jpg')"></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/Rece.jpg')"></div>
             </div>
 
             <div class="slider-counter text-center"></div>
@@ -67,7 +67,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
               <div class="slide-thumb bg-image" style="background-image: url('images/G8.jpg')"><a href="#"></a></div>
               <div class="slide-thumb bg-image" style="background-image: url('images/G9.jpg')"><a href="#"></a></div>
               <div class="slide-thumb bg-image" style="background-image: url('images/G10.jpg')"><a href="#"></a></div>
-              <div class="slide-thumb bg-image" style="background-image: url('images/G11.jpg')"><a href="#"></a></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/Rece.jpg')"><a href="#"></a></div>
             </div>
 
           </div>

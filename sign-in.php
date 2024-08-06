@@ -65,7 +65,7 @@ unset($_SESSION['error']);
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-6 section-heading">
-            <h2 class="text-center">Sign In</h2>
+            <h2 class="text-center whiteTxt">Sign In</h2>
             <p>Welcome back! Please enter your details to sign in.</p>
             <?php if($error): ?>
               <div class="alert alert-danger"><?php echo $error; ?></div>

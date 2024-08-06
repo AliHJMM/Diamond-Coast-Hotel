@@ -78,7 +78,8 @@ try {
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
                             <?php if (empty($bookings)): ?>
-                                <p class="text-center">You have no bookings.</p>
+                                <p class="text-center">You have no bookings yet. <br> <a href="rooms.php" class="btn btn-primary mt-4">View Rooms</a></p>
+                                
                             <?php else: ?>
                                 <div class="booking-list">
                                     <?php foreach ($bookings as $booking): ?>

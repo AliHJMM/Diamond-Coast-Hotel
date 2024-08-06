@@ -60,7 +60,7 @@ if (!isset($_SESSION['username'])) {
         </div>
       </div>
 
-      <div class="untree_co--site-hero overlay" style="background-image: url('images/room_1_a.jpg')">
+      <div class="untree_co--site-hero overlay" style="background-image: url('images/S3.jpg')">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-10">

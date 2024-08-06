@@ -117,7 +117,7 @@ unset($_SESSION['email']);
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-6 section-heading">
-            <h2 class="text-center">Sign Up</h2>
+            <h2 class="text-center whiteTxt">Sign Up</h2>
             <p>Create an account to enjoy our exclusive services and offers.</p>
           </div>
         </div>
