@@ -27,7 +27,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
   <main class="untree_co--site-main">
 
 
-    <div class="untree_co--site-hero inner-page" style="background-image: url('images/slider_2.jpg')">
+    <div class="untree_co--site-hero inner-page" style="background-image: url('images/gallery.png')">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center">
@@ -52,10 +52,10 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
         <div class="row align-items-stretch">
           <div class="col-9 relative" data-aos="fade-up" data-aos-delay="">
             <div class="owl-carousel owl-gallery-big">
-              <div class="slide-thumb bg-image" style="background-image: url('images/room_1_a.jpg')"></div>
-              <div class="slide-thumb bg-image" style="background-image: url('images/room_1_b.jpg')"></div>
-              <div class="slide-thumb bg-image" style="background-image: url('images/room_2_a.jpg')"></div>
-              <div class="slide-thumb bg-image" style="background-image: url('images/room_2_b.jpg')"></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/G8.jpg')"></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/G9.jpg')"></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/G10.jpg')"></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/G11.jpg')"></div>
             </div>
 
             <div class="slider-counter text-center"></div>
@@ -64,10 +64,10 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
           <div class="col-3 relative" data-aos="fade-up" data-aos-delay="100">
 
             <div class="owl-carousel owl-gallery-small">
-              <div class="slide-thumb bg-image" style="background-image: url('images/room_1_a.jpg')"><a href="#"></a></div>
-              <div class="slide-thumb bg-image" style="background-image: url('images/room_1_b.jpg')"><a href="#"></a></div>
-              <div class="slide-thumb bg-image" style="background-image: url('images/room_2_a.jpg')"><a href="#"></a></div>
-              <div class="slide-thumb bg-image" style="background-image: url('images/room_2_b.jpg')"><a href="#"></a></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/G8.jpg')"><a href="#"></a></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/G9.jpg')"><a href="#"></a></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/G10.jpg')"><a href="#"></a></div>
+              <div class="slide-thumb bg-image" style="background-image: url('images/G11.jpg')"><a href="#"></a></div>
             </div>
 
           </div>
@@ -85,38 +85,38 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
         </div>
         <div class="row gutter-2">
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="">
-            <a href="images/img_1.jpg" data-fancybox="gallery">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+            <a href="images/G1.jpg" data-fancybox="gallery">
+              <img src="images/G1.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <a href="images/img_2.jpg" data-fancybox="gallery">
-              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+            <a href="images/G2.jpg" data-fancybox="gallery">
+              <img src="images/G2.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <a href="images/img_1.jpg" data-fancybox="gallery">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+            <a href="images/G3.jpg" data-fancybox="gallery">
+              <img src="images/G3.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <a href="images/img_1.jpg" data-fancybox="gallery">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+            <a href="images/G4.jpg" data-fancybox="gallery">
+              <img src="images/G4.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="images/img_1.jpg" data-fancybox="gallery">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+            <a href="images/G5.jpg" data-fancybox="gallery">
+              <img src="images/G5.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="">
-            <a href="images/img_1.jpg" data-fancybox="gallery">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+            <a href="images/G6.jpg" data-fancybox="gallery">
+              <img src="images/G6.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <a href="images/img_2.jpg" data-fancybox="gallery">
-              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+            <a href="images/G7.jpg" data-fancybox="gallery">
+              <img src="images/G7.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
         </div>

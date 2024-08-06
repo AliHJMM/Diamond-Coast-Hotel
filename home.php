@@ -36,7 +36,7 @@ if (!isset($_SESSION['username'])) {
 
     <div class="owl-carousel owl-hero">
 
-      <div class="untree_co--site-hero overlay" style="background-image: url('images/slider_2.jpg')">
+      <div class="untree_co--site-hero overlay" style="background-image: url('images/Hotel_DCH.webp')">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-8">

@@ -56,7 +56,7 @@ if (!empty($searchTerm)) {
 
   <main class="untree_co--site-main">
 
-    <div class="untree_co--site-hero inner-page" style="background-image: url('images/slider_2.jpg')">
+    <div class="untree_co--site-hero inner-page" style="background-image: url('images/Rooms.jpg')">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center">
