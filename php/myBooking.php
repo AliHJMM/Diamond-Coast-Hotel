@@ -93,7 +93,7 @@ try {
                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#cancelModal-<?php echo $booking['id']; ?>">Cancel Booking</button>
                                             </div>
                                             <div class="room-image">
-                                                <img src="images/<?php echo htmlspecialchars($booking['image_url']); ?>" alt="<?php echo htmlspecialchars($booking['room_name']); ?>" style="width: 150px; height: auto;">
+                                                <img src="../images/<?php echo htmlspecialchars($booking['image_url']); ?>" alt="<?php echo htmlspecialchars($booking['room_name']); ?>" style="width: 150px; height: auto;">
                                             </div>
                                         </div>
 

@@ -36,7 +36,7 @@ if (!isset($_SESSION['username'])) {
 
     <div class="owl-carousel owl-hero">
 
-      <div class="untree_co--site-hero overlay" style="background-image: url('images/Hotel_DCH.webp')">
+      <div class="untree_co--site-hero overlay" style="background-image: url('../images/Hotel_DCH.webp')">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-8">
@@ -48,7 +48,7 @@ if (!isset($_SESSION['username'])) {
         </div>
       </div>
 
-      <div class="untree_co--site-hero overlay" style="background-image: url('images/slider_1.jpg')">
+      <div class="untree_co--site-hero overlay" style="background-image: url('../images/slider_1.jpg')">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7">
@@ -60,7 +60,7 @@ if (!isset($_SESSION['username'])) {
         </div>
       </div>
 
-      <div class="untree_co--site-hero overlay" style="background-image: url('images/S3.jpg')">
+      <div class="untree_co--site-hero overlay" style="background-image: url('../images/S3.jpg')">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-10">
@@ -91,11 +91,11 @@ if (!isset($_SESSION['username'])) {
             <div class="image-stack">
               <div class="image-stack-item image-stack-item-top" data-jarallax-element="-50">
                 <div class="overlay"></div>
-                <img src="images/room_1_a.jpg" alt="Image" class="img-fluid pic1">
+                <img src="../images/room_1_a.jpg" alt="Image" class="img-fluid pic1">
               </div>
               <div class="image-stack-item image-stack-item-bottom">
                 <div class="overlay"></div>
-                <img src="images/room_1_b.jpg" alt="Image" class="img-fluid pic2">
+                <img src="../images/room_1_b.jpg" alt="Image" class="img-fluid pic2">
               </div>
             </div>
           </div> <!-- .suite -->
@@ -115,11 +115,11 @@ if (!isset($_SESSION['username'])) {
             <div class="image-stack">
               <div class="image-stack-item image-stack-item-top">
                 <div class="overlay"></div>
-                <img src="images/room_2_a.jpg" alt="Image" class="img-fluid pic1">
+                <img src="../images/room_2_a.jpg" alt="Image" class="img-fluid pic1">
               </div>
               <div class="image-stack-item image-stack-item-bottom" data-jarallax-element="-50">
                 <div class="overlay"></div>
-                <img src="images/room_2_b.jpg" alt="Image" class="img-fluid pic2">
+                <img src="../images/room_2_b.jpg" alt="Image" class="img-fluid pic2">
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ if (!isset($_SESSION['username'])) {
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
             <div class="media-29191 text-center h-100">
               <div class="media-29191-icon">
-                <img src="images/svg/parking.svg" alt="Image" class="img-fluid">
+                <img src="../images/svg/parking.svg" alt="Image" class="img-fluid">
               </div>
               <h3>Free Self-Parking</h3>
               <p>Enjoy the convenience of complimentary self-parking during your stay. Our on-site lot provides hassle-free access, allowing you to come and go as needed without additional fees.</p>
@@ -163,7 +163,7 @@ if (!isset($_SESSION['username'])) {
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
             <div class="media-29191 text-center h-100">
               <div class="media-29191-icon">
-                <img src="images/svg/internet.svg" alt="Image" class="img-fluid">
+                <img src="../images/svg/internet.svg" alt="Image" class="img-fluid">
               </div>
               <h3>High speed Internet access</h3>
               <p>High-speed WiFi is available throughout our hotel, keeping you connected during your stay at no extra charge.</p>
@@ -175,7 +175,7 @@ if (!isset($_SESSION['username'])) {
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
             <div class="media-29191 text-center h-100">
               <div class="media-29191-icon">
-                <img src="images/svg/wifi.svg" alt="Image" class="img-fluid">
+                <img src="../images/svg/wifi.svg" alt="Image" class="img-fluid">
               </div>
               <h3>Complimentary WiFi in public areas</h3>
               <p>Complimentary WiFi is accessible in all our public spaces, enabling you to stay connected while enjoying the hotel's common areas.</p>
@@ -188,7 +188,7 @@ if (!isset($_SESSION['username'])) {
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
             <div class="media-29191 text-center h-100">
               <div class="media-29191-icon">
-                <img src="images/svg/elevator.svg" alt="Image" class="img-fluid">
+                <img src="../images/svg/elevator.svg" alt="Image" class="img-fluid">
               </div>
               <h3>Elevators</h3>
               <p>Elevators provide easy access to all floors, ensuring a smooth and convenient stay.</p>
@@ -201,7 +201,7 @@ if (!isset($_SESSION['username'])) {
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
             <div class="media-29191 text-center h-100">
               <div class="media-29191-icon">
-                <img src="images/svg/partners.svg" alt="Image" class="img-fluid">
+                <img src="../images/svg/partners.svg" alt="Image" class="img-fluid">
               </div>
 
               <h3>Meeting rooms</h3>
@@ -214,7 +214,7 @@ if (!isset($_SESSION['username'])) {
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
             <div class="media-29191 text-center h-100">
               <div class="media-29191-icon">
-                <img src="images/svg/washing-machine.svg" alt="Image" class="img-fluid">
+                <img src="../images/svg/washing-machine.svg" alt="Image" class="img-fluid">
               </div>
               <h3>Laundry and Valet service</h3>
               <p>Convenient laundry and valet services are available to cater to your needs during your stay.</p>
@@ -228,7 +228,6 @@ if (!isset($_SESSION['username'])) {
       </div>
     </div>
 
-    <?php include 'specialRequest.php'; ?>
 
 
   </div>

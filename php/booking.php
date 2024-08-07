@@ -73,7 +73,7 @@ if (!$room) {
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="room-details-container">
-                                <img src="images/<?php echo htmlspecialchars($room['image_url']); ?>" alt="Room Image" class="room-image">
+                                <img src="../images/<?php echo htmlspecialchars($room['image_url']); ?>" alt="Room Image" class="room-image">
                                 <div class="room-info">
                                     <h4 class="whiteTxt"><?php echo htmlspecialchars($room['name']); ?></h4>
                                     <p><?php echo htmlspecialchars($room['description']); ?></p>

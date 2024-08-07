@@ -49,7 +49,7 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
 
     <?php include 'header.php'; ?>
 
-        <div class="untree_co--site-hero" style="background-image: url('images/Weather.webp');">
+        <div class="untree_co--site-hero" style="background-image: url('../images/Weather.webp');">
             <div class="hero-contents">
                 <h1 class="hero-heading">Weather Information</h1>
                 <div class="sub-text ">
@@ -177,7 +177,6 @@ if (!isset($_SESSION['username']) && !isset($_GET['room_type_id'])) {
             </div>
         </div>
 
-        <?php include 'specialRequest.php'; ?>
         </div>
         <?php include 'footer.php'; ?>
         <?php include 'searchWrapper.php'; ?>

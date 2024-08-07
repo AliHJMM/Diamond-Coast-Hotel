@@ -1,3 +1,12 @@
+<div class="untree_co--site-section py-5 bg-body-darker cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4 class="m-0 p-0">If you have any special requests, please feel free to call us. <a href="tel:+97335114629">+973 35114629</a></h4>
+      </div>
+    </div>
+  </div>
+</div>
 <footer class="untree_co--site-footer">
   <div class="container">
     <div class="row">
@@ -42,7 +51,7 @@
               <form id="subscribeForm" class="form-subscribe" action="#">
                 <div class="form-group d-flex">
                   <input type="email" class="form-control mr-2" id="subscribeEmail" placeholder="Enter your email" required>
-                  <input type="submit" value="Subscribe" class="btn btn-primary mt-4">
+                  <input type="submit" value="Subscribe" class="btn btn-primary">
                 </div>
               </form>
             </div>

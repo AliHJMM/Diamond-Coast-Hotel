@@ -56,7 +56,7 @@ if (!empty($searchTerm)) {
 
   <main class="untree_co--site-main">
 
-    <div class="untree_co--site-hero inner-page" style="background-image: url('images/Rooms.jpg')">
+    <div class="untree_co--site-hero inner-page" style="background-image: url('../images/Rooms.jpg')">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center">
@@ -75,7 +75,7 @@ if (!empty($searchTerm)) {
       <?php foreach ($rooms as $room) : ?>
         <div class="row no-gutters align-items-stretch room-animate site-section">
           <div class="col-md-7 <?php echo ($room['id'] % 2 == 0) ? 'order-md-2' : ''; ?> img-wrap" data-jarallax-element="-100">
-            <div class="bg-image h-100" style="background-color: #efefef; background-image: url('images/<?php echo htmlspecialchars($room['image_url']); ?>');"></div>
+            <div class="bg-image h-100" style="background-color: #efefef; background-image: url('../images/<?php echo htmlspecialchars($room['image_url']); ?>');"></div>
           </div>
           <div class="col-md-5">
             <div class="row justify-content-center">
