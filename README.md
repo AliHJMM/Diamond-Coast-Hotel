@@ -1,5 +1,5 @@
 # Diamond-Coast
-# **Luxury Hotel Website**
+### **Luxury Hotel Website**
 
 ## Description
 
