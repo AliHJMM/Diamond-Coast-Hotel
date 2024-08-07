@@ -9,7 +9,7 @@ This is a PHP web application built for IS345 "Web Development 2" course at UOB 
 -  **Theme Preference (Cookies)**
 -  **Web Service with API Key Registration**
 
-  And of course search, booking, contact, and other Hotel website functionalities..
+  And of Course Search, Booking, Contact, & Other Functionalities..
 
   Technologies used: PHP, JS, SQL, CSS, and XAMPP(for Apache and MYSQL Servers) 
 
