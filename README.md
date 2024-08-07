@@ -1,4 +1,4 @@
-# Diamond-Coast
+# Diamond-Coast-Hotel
 ### **Luxury Hotel Website**
 
 ## 💻 Tech Stack:
