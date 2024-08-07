@@ -16,7 +16,7 @@ This is a PHP web application built for IS345 "Web Development 2" course at UOB 
   - Clone or Download the repo
   - After downloading, move it to XAMPP htdocs file then start the Apache and MYSQL servers from the XAMPP Console
   - Create a DB and name it "diamondcoast" in phpmyadmin and import the sql file
-  - in ur web-browser type "localhost/Diamond-Coast-Hotel/php/"
+  - in ur Browser type "localhost/Diamond-Coast-Hotel/php/"
   - Create an account and thats it!
 
 ## 💻 Tech Stack:
