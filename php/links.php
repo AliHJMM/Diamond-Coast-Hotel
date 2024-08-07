@@ -1,4 +1,4 @@
-<!-- links.php -->
+<?php //links.php?>
 <!-- Stylesheets -->
 <link rel="shortcut icon" href="../Images/DiamondCoastHotelLogo.png">
 <link rel="stylesheet" href="../css/vendor/icomoon/style.css">

@@ -1,3 +1,4 @@
+<?php //SearchWrapper.php?>
 <div class="search-wrap">
       <a href="#" class="close-search js-search-toggle">
         <span>Close</span>
