@@ -15,7 +15,7 @@ This is a PHP web application built for IS345 "Web Development 2" course at UOB 
 
   ## Usage
 
-  - first of all if u dont have [XAMPP](https://www.apachefriends.org/download.html) download it to have a web and MYSQL servers **(XAMPP is the most popular PHP development environment)**
+  - First of all if u dont have [XAMPP](https://www.apachefriends.org/download.html) download it to have a web and MYSQL servers **(XAMPP is the most popular PHP development environment)**
   - Clone or Download the repo
   - after u download it move it to the XAMPP htdocs file then start the Apache and MYSQL servers from the XAMPP Console
   - Creat a DB and name it "diamondcoast" in phpmyadmin and import the sql file
