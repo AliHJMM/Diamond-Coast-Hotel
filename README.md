@@ -1,6 +1,14 @@
 # Diamond-Coast
 **Luxury Hotel Website**
 
+## Authors
+
+- [Ali Hasan](https://github.com/AliHJMM)
+- [Habib Mansoor](https://github.com/7abib04)
+- [Mohamed Alasfoor](https://github.com/Mohamed-Alasfoor)
+- [Hussain Ali](https://github.com/hujaafar)
+- [Khalil Ebrahim](https://github.com/khalil200345)
+
 ## Description
 
 This is a PHP web application built for IS345 "Web Development 2" course at UOB that has:
@@ -37,14 +45,3 @@ This is a PHP web application built for IS345 "Web Development 2" course at UOB 
 ![Screenshot 2024-08-07 085609](https://github.com/user-attachments/assets/e215655e-14b9-417e-b768-97fdc4a190c9)
 ![Screenshot 2024-08-07 085630](https://github.com/user-attachments/assets/db7c795f-747c-4d3e-8aec-20c5f68f13ad)
 ![Screenshot 2024-08-07 085833](https://github.com/user-attachments/assets/76e04900-6adb-4d16-9248-8c690519ea8b)
-
-## Authors
-
-[Ali Hasan](https://github.com/AliHJMM)
-[Habib Mansoor](https://github.com/7abib04)
-[Mohamed Alasfoor](https://github.com/Mohamed-Alasfoor)
-[Hussain Ali](https://github.com/hujaafar)
-[Khalil Ebrahim](https://github.com/khalil200345)
- 
-
- 
